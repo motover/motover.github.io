@@ -1,0 +1,3245 @@
+/* =====================================================
+   Moto旅 - Premium Motorcycle Magazine
+   Style.css Part 1A
+   Reset • Variables • Global • Buttons • Utilities
+====================================================== */
+
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
+
+/* ===========================
+   RESET
+=========================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    font-size:16px;
+}
+
+body{
+    font-family:"Noto Sans JP",sans-serif;
+    background:#0b0d12;
+    color:#f5f5f5;
+    line-height:1.7;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+    transition:.35s ease;
+}
+
+ul{
+    list-style:none;
+}
+
+button,
+input{
+    font:inherit;
+    outline:none;
+    border:none;
+}
+
+section{
+    padding:90px 0;
+}
+
+/* ===========================
+   ROOT VARIABLES
+=========================== */
+
+:root{
+
+    --primary:#ff3d00;
+    --primary-light:#ff6333;
+
+    --secondary:#ffffff;
+
+    --dark:#0b0d12;
+    --dark-2:#11151c;
+    --dark-3:#171c24;
+
+    --card:#171c24;
+    --border:#2a303d;
+
+    --text:#ffffff;
+    --text-light:#cfd6df;
+    --muted:#8d95a3;
+
+    --success:#18c964;
+    --warning:#ffb300;
+
+    --shadow:
+        0 20px 50px rgba(0,0,0,.45);
+
+    --glass:
+        rgba(255,255,255,.05);
+
+    --radius-sm:10px;
+    --radius:18px;
+    --radius-lg:28px;
+
+    --container:1280px;
+
+    --transition:.35s ease;
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--primary);
+    border-radius:100px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:var(--primary-light);
+}
+
+/* ===========================
+   SELECTION
+=========================== */
+
+::selection{
+    background:var(--primary);
+    color:#fff;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    width:min(92%,var(--container));
+    margin-inline:auto;
+}
+
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    color:#fff;
+    line-height:1.2;
+    font-weight:700;
+}
+
+h1{
+    font-size:clamp(2.8rem,6vw,5.4rem);
+}
+
+h2{
+    font-size:clamp(2rem,4vw,3.2rem);
+}
+
+h3{
+    font-size:1.45rem;
+}
+
+p{
+    color:var(--text-light);
+}
+
+.section-header{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.section-header h2{
+    margin:18px 0;
+}
+
+.section-header p{
+    font-size:1.05rem;
+}
+
+/* ===========================
+   BADGES
+=========================== */
+
+.section-tag,
+.hero-badge{
+
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    padding:10px 18px;
+
+    border-radius:100px;
+
+    background:rgba(255,61,0,.12);
+
+    color:var(--primary);
+
+    border:1px solid rgba(255,61,0,.25);
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn-primary,
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:15px 34px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+    cursor:pointer;
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    box-shadow:0 15px 40px rgba(255,61,0,.35);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    background:var(--primary-light);
+
+}
+
+.btn-secondary{
+
+    border:1px solid var(--border);
+
+    background:rgba(255,255,255,.05);
+
+    color:#fff;
+
+    backdrop-filter:blur(16px);
+
+}
+
+.btn-secondary:hover{
+
+    background:rgba(255,255,255,.12);
+
+    transform:translateY(-4px);
+
+}
+
+/* ===========================
+   GLASS CARD
+=========================== */
+
+.glass{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:var(--radius);
+
+}
+
+/* ===========================
+   UTILITIES
+=========================== */
+
+.text-center{
+    text-align:center;
+}
+
+.mt-1{margin-top:1rem;}
+.mt-2{margin-top:2rem;}
+.mt-3{margin-top:3rem;}
+.mt-4{margin-top:4rem;}
+
+.mb-1{margin-bottom:1rem;}
+.mb-2{margin-bottom:2rem;}
+.mb-3{margin-bottom:3rem;}
+.mb-4{margin-bottom:4rem;}
+
+.grid{
+    display:grid;
+    gap:30px;
+}
+
+.flex{
+    display:flex;
+    align-items:center;
+}
+
+.hidden{
+    display:none;
+}
+
+/* ===========================
+   BACK TO TOP DEFAULT
+=========================== */
+
+#backToTop{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s ease;
+
+    z-index:999;
+
+    box-shadow:0 10px 30px rgba(255,61,0,.35);
+
+}
+
+#backToTop.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+#backToTop:hover{
+
+    transform:translateY(-5px);
+
+}
+/* =====================================================
+   Moto旅 - Premium Motorcycle Magazine
+   Style.css Part 1B
+   Header • Navbar • Logo • Navigation
+====================================================== */
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    transition:all .35s ease;
+    padding:18px 0;
+    background:rgba(11,13,18,.35);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.header.scrolled{
+    padding:12px 0;
+    background:rgba(11,13,18,.95);
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+/* ===========================
+   HEADER CONTAINER
+=========================== */
+
+.header .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:1.55rem;
+    font-weight:800;
+    color:#fff;
+    letter-spacing:.03em;
+}
+
+.logo i{
+    color:var(--primary);
+    font-size:1.8rem;
+    transition:.35s ease;
+}
+
+.logo:hover i{
+    transform:rotate(-8deg) scale(1.15);
+}
+
+.logo span{
+    color:#fff;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.navbar ul{
+    display:flex;
+    align-items:center;
+    gap:36px;
+}
+
+.navbar li{
+    position:relative;
+}
+
+/* ===========================
+   NAV LINKS
+=========================== */
+
+.navbar a{
+
+    position:relative;
+
+    color:var(--text-light);
+
+    font-size:.97rem;
+
+    font-weight:600;
+
+    transition:all .3s ease;
+
+    padding:6px 0;
+
+}
+
+.navbar a:hover,
+.navbar a.active{
+
+    color:#fff;
+
+}
+
+/* underline animation */
+
+.navbar a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.35s ease;
+
+    border-radius:20px;
+
+}
+
+.navbar a:hover::after,
+.navbar a.active::after{
+
+    width:100%;
+
+}
+
+/* ===========================
+   HEADER BUTTONS
+=========================== */
+
+.header-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+/* smaller button inside header */
+
+.header .btn-primary{
+
+    padding:13px 24px;
+
+    font-size:.92rem;
+
+}
+
+/* ===========================
+   HOVER GLOW
+=========================== */
+
+.header .btn-primary:hover{
+
+    box-shadow:
+        0 12px 35px rgba(255,61,0,.45);
+
+}
+
+/* ===========================
+   MOBILE MENU BUTTON
+=========================== */
+
+.menu-toggle{
+
+    display:none;
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    cursor:pointer;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.3s ease;
+
+}
+
+.menu-toggle:hover{
+
+    background:rgba(255,255,255,.12);
+
+}
+
+/* ===========================
+   MOBILE NAVIGATION
+=========================== */
+
+@media (max-width:992px){
+
+    .navbar{
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        width:100%;
+
+        background:#11151c;
+
+        border-top:1px solid rgba(255,255,255,.06);
+
+        padding:20px;
+
+        display:none;
+
+    }
+
+    .navbar.active{
+
+        display:block;
+
+        animation:fadeIn .35s ease;
+
+    }
+
+    .navbar ul{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .menu-toggle{
+
+        display:flex;
+
+    }
+
+    .header-buttons{
+
+        display:none;
+
+    }
+
+}
+
+/* ===========================
+   SMALL DEVICES
+=========================== */
+
+@media (max-width:768px){
+
+    .header{
+
+        padding:14px 0;
+
+    }
+
+    .logo{
+
+        font-size:1.3rem;
+
+    }
+
+    .logo i{
+
+        font-size:1.5rem;
+
+    }
+
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(-10px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+/* =====================================================
+   Moto旅 - Premium Motorcycle Magazine
+   Style.css Part 1C
+   Hero Section
+====================================================== */
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    padding:160px 0 100px;
+    background:
+        radial-gradient(circle at top right,
+        rgba(255,61,0,.18),
+        transparent 35%),
+        linear-gradient(180deg,#0b0d12,#11151c);
+}
+
+/* Background Glow */
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:700px;
+    height:700px;
+    right:-220px;
+    top:-220px;
+    border-radius:50%;
+    background:rgba(255,61,0,.12);
+    filter:blur(120px);
+    z-index:0;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    left:-150px;
+    bottom:-150px;
+    border-radius:50%;
+    background:rgba(255,255,255,.04);
+    filter:blur(120px);
+    z-index:0;
+}
+
+/* ===========================
+   HERO GRID
+=========================== */
+
+.hero-grid{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    align-items:center;
+    gap:70px;
+}
+
+/* ===========================
+   HERO CONTENT
+=========================== */
+
+.hero-content{
+    max-width:650px;
+}
+
+.hero-content h1{
+    margin:25px 0;
+    line-height:1.1;
+    font-weight:900;
+    letter-spacing:-1px;
+}
+
+.hero-content p{
+    font-size:1.1rem;
+    color:var(--text-light);
+    margin-bottom:40px;
+}
+
+/* ===========================
+   HERO BUTTONS
+=========================== */
+
+.hero-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-bottom:55px;
+}
+
+/* ===========================
+   HERO STATS
+=========================== */
+
+.hero-stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.hero-stats div{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:24px;
+    backdrop-filter:blur(20px);
+    transition:.35s ease;
+}
+
+.hero-stats div:hover{
+    transform:translateY(-8px);
+    border-color:rgba(255,61,0,.35);
+}
+
+.hero-stats h2{
+    font-size:2rem;
+    color:var(--primary);
+    margin-bottom:8px;
+}
+
+.hero-stats p{
+    margin:0;
+    color:var(--muted);
+    font-size:.95rem;
+}
+
+/* ===========================
+   HERO IMAGE
+=========================== */
+
+.hero-image{
+    position:relative;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:32px;
+    box-shadow:
+        0 40px 80px rgba(0,0,0,.45);
+    object-fit:cover;
+    transition:.45s ease;
+}
+
+.hero-image:hover img{
+    transform:scale(1.03);
+}
+
+/* Floating Card */
+
+.hero-image::before{
+    content:"Premium Review";
+    position:absolute;
+    top:25px;
+    left:25px;
+    padding:12px 20px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:999px;
+    color:#fff;
+    font-size:.85rem;
+    font-weight:700;
+    z-index:5;
+}
+
+/* ===========================
+   HERO IMAGE SHADOW
+=========================== */
+
+.hero-image::after{
+    content:"";
+    position:absolute;
+    inset:-20px;
+    z-index:-1;
+    border-radius:40px;
+    background:
+        radial-gradient(circle,
+        rgba(255,61,0,.25),
+        transparent 70%);
+    filter:blur(60px);
+}
+
+/* ===========================
+   SCROLL INDICATOR
+=========================== */
+
+.scroll-indicator{
+    position:absolute;
+    bottom:40px;
+    left:50%;
+    transform:translateX(-50%);
+    color:#fff;
+    opacity:.7;
+    animation:scrollDown 2s infinite;
+}
+
+@keyframes scrollDown{
+
+    0%{
+        transform:translate(-50%,0);
+        opacity:.3;
+    }
+
+    50%{
+        transform:translate(-50%,10px);
+        opacity:1;
+    }
+
+    100%{
+        transform:translate(-50%,20px);
+        opacity:.3;
+    }
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px){
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-content{
+        max-width:100%;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-stats{
+        margin-top:30px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+        padding:140px 0 70px;
+    }
+
+    .hero-grid{
+        gap:45px;
+    }
+
+    .hero-stats{
+        grid-template-columns:1fr;
+    }
+
+    .hero-image::before{
+        display:none;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero h1{
+        font-size:2.6rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+    }
+
+}
+/* =====================================================
+   Moto旅 - Premium Motorcycle Magazine
+   Style.css Part 2A-1
+   Featured Section + Bike Cards
+======================================================*/
+
+/* ===========================
+   FEATURED SECTION
+=========================== */
+
+.featured-section{
+    padding:110px 0;
+    background:linear-gradient(
+        180deg,
+        #11151c 0%,
+        #0b0d12 100%
+    );
+    position:relative;
+    overflow:hidden;
+}
+
+.featured-section::before{
+    content:"";
+    position:absolute;
+    top:-180px;
+    right:-180px;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    background:rgba(255,61,0,.08);
+    filter:blur(120px);
+    pointer-events:none;
+}
+
+.featured-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:32px;
+    margin-top:60px;
+}
+
+/* ===========================
+   BIKE CARD
+=========================== */
+
+.bike-card{
+
+    background:var(--card);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    transition:.4s ease;
+
+    position:relative;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+}
+
+.bike-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:rgba(255,61,0,.35);
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.45);
+
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.bike-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    height:260px;
+
+}
+
+.bike-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s ease;
+
+}
+
+.bike-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   BADGE
+=========================== */
+
+.bike-badge{
+
+    position:absolute;
+
+    top:18px;
+
+    left:18px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    box-shadow:
+        0 10px 25px rgba(255,61,0,.35);
+
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.bike-content{
+
+    padding:28px;
+
+}
+
+.bike-content h3{
+
+    margin-bottom:16px;
+
+    font-size:1.5rem;
+
+}
+
+.bike-content p{
+
+    color:var(--text-light);
+
+    margin-bottom:24px;
+
+    line-height:1.8;
+
+}
+
+.bike-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.bike-content a:hover{
+
+    gap:16px;
+
+}
+
+/* ===========================
+   HOVER SHINE
+=========================== */
+
+.bike-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        120deg,
+        transparent 20%,
+        rgba(255,255,255,.08),
+        transparent 80%
+    );
+
+    transform:translateX(-120%);
+
+    transition:.8s;
+
+}
+
+.bike-card:hover::after{
+
+    transform:translateX(120%);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px){
+
+    .featured-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .featured-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .bike-image{
+
+        height:230px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .bike-content{
+
+        padding:22px;
+
+    }
+
+    .bike-content h3{
+
+        font-size:1.3rem;
+
+    }
+
+}
+/* =====================================================
+   Moto旅 - Premium Motorcycle Magazine
+   Style.css Part 2A-2
+   Popular Brands Section
+====================================================== */
+
+/* ===========================
+   BRANDS SECTION
+=========================== */
+
+.brands{
+    position:relative;
+    padding:100px 0;
+    background:#0d1117;
+    overflow:hidden;
+}
+
+.brands::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    top:-220px;
+    left:-220px;
+    border-radius:50%;
+    background:rgba(255,61,0,.08);
+    filter:blur(120px);
+    pointer-events:none;
+}
+
+.brands .section-header{
+    margin-bottom:60px;
+}
+
+/* ===========================
+   BRAND GRID
+=========================== */
+
+.brand-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+/* ===========================
+   BRAND CARD
+=========================== */
+
+.brand-card{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:140px;
+
+    padding:30px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    color:#fff;
+
+    font-size:1.15rem;
+
+    font-weight:800;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    backdrop-filter:blur(18px);
+
+    transition:all .35s ease;
+
+    overflow:hidden;
+
+}
+
+/* ===========================
+   SHINE EFFECT
+=========================== */
+
+.brand-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+
+    transition:.8s ease;
+
+}
+
+.brand-card:hover::before{
+
+    left:150%;
+
+}
+
+/* ===========================
+   HOVER EFFECT
+=========================== */
+
+.brand-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(255,61,0,.35);
+
+    background:rgba(255,61,0,.08);
+
+    color:var(--primary);
+
+    box-shadow:
+        0 20px 45px rgba(255,61,0,.18);
+
+}
+
+/* ===========================
+   ACTIVE SCALE
+=========================== */
+
+.brand-card:active{
+
+    transform:scale(.97);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px){
+
+    .brand-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:640px){
+
+    .brand-grid{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+    .brand-card{
+
+        min-height:110px;
+
+        font-size:1rem;
+
+    }
+
+}
+/* =====================================================
+   Moto旅 - Premium Motorcycle Magazine
+   Style.css Part 2A-3
+   Featured & Brands Polish + Premium Effects
+====================================================== */
+
+/* ===========================
+   FEATURED SECTION DECORATION
+=========================== */
+
+.featured-section::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:-180px;
+    transform:translateX(-50%);
+    width:700px;
+    height:350px;
+    background:radial-gradient(circle,
+        rgba(255,61,0,.08),
+        transparent 70%);
+    filter:blur(90px);
+    pointer-events:none;
+}
+
+/* ===========================
+   IMAGE OVERLAY
+=========================== */
+
+.bike-image::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        180deg,
+        rgba(0,0,0,0) 20%,
+        rgba(0,0,0,.55) 100%
+    );
+    z-index:1;
+}
+
+.bike-image img{
+    position:relative;
+    z-index:0;
+}
+
+/* ===========================
+   BADGE POLISH
+=========================== */
+
+.bike-badge{
+    z-index:2;
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.15);
+}
+
+/* ===========================
+   CARD BORDER GLOW
+=========================== */
+
+.bike-card{
+    isolation:isolate;
+}
+
+.bike-card::before{
+    content:"";
+    position:absolute;
+    inset:-1px;
+    border-radius:24px;
+    padding:1px;
+    background:linear-gradient(
+        135deg,
+        rgba(255,61,0,.35),
+        transparent,
+        rgba(255,255,255,.08)
+    );
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor;
+            mask-composite:exclude;
+    opacity:0;
+    transition:.4s ease;
+    pointer-events:none;
+}
+
+.bike-card:hover::before{
+    opacity:1;
+}
+
+/* ===========================
+   CONTENT ANIMATION
+=========================== */
+
+.bike-content h3,
+.bike-content p,
+.bike-content a{
+    transition:.35s ease;
+}
+
+.bike-card:hover h3{
+    color:var(--primary);
+}
+
+.bike-card:hover p{
+    color:#ffffff;
+}
+
+.bike-card:hover a{
+    transform:translateX(6px);
+}
+
+/* ===========================
+   BRAND CARD ICON EFFECT
+=========================== */
+
+.brand-card{
+    position:relative;
+}
+
+.brand-card::after{
+    content:"➜";
+    position:absolute;
+    right:24px;
+    opacity:0;
+    transform:translateX(-8px);
+    transition:.3s ease;
+    font-size:.9rem;
+}
+
+.brand-card:hover::after{
+    opacity:1;
+    transform:translateX(0);
+}
+
+/* ===========================
+   FOCUS ACCESSIBILITY
+=========================== */
+
+.brand-card:focus-visible,
+.bike-content a:focus-visible{
+    outline:2px solid var(--primary);
+    outline-offset:4px;
+    border-radius:8px;
+}
+
+/* ===========================
+   SMOOTH ENTRANCE
+=========================== */
+
+.bike-card,
+.brand-card{
+    animation:fadeUp .7s ease both;
+}
+
+.bike-card:nth-child(2){
+    animation-delay:.1s;
+}
+
+.bike-card:nth-child(3){
+    animation-delay:.2s;
+}
+
+.brand-card:nth-child(2){
+    animation-delay:.05s;
+}
+
+.brand-card:nth-child(3){
+    animation-delay:.1s;
+}
+
+.brand-card:nth-child(4){
+    animation-delay:.15s;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+   RESPONSIVE POLISH
+=========================== */
+
+@media (max-width:768px){
+
+    .featured-section,
+    .brands{
+        padding:70px 0;
+    }
+
+    .bike-card{
+        border-radius:20px;
+    }
+
+    .bike-image{
+        height:220px;
+    }
+
+    .brand-card{
+        min-height:90px;
+        border-radius:18px;
+    }
+
+}
+/* =====================================================
+   Moto旅 - Premium Motorcycle Magazine
+   Style.css Part 2B-1
+   Popular Articles
+====================================================== */
+
+/* ===========================
+   POPULAR ARTICLES
+=========================== */
+
+.popular-articles{
+    position:relative;
+    padding:110px 0;
+    background:#11151c;
+    overflow:hidden;
+}
+
+.popular-articles::before{
+    content:"";
+    position:absolute;
+    top:-220px;
+    right:-220px;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    background:rgba(255,61,0,.08);
+    filter:blur(120px);
+    pointer-events:none;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.articles-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:32px;
+    margin-top:60px;
+}
+
+/* ===========================
+   ARTICLE CARD
+=========================== */
+
+.article-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    background:var(--card);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:.4s ease;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+}
+
+.article-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:rgba(255,61,0,.35);
+
+    box-shadow:0 35px 70px rgba(0,0,0,.45);
+
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.article-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    transition:.6s ease;
+
+}
+
+.article-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.article-content{
+
+    padding:28px;
+
+}
+
+.article-content span{
+
+    display:inline-block;
+
+    margin-bottom:14px;
+
+    padding:8px 16px;
+
+    background:rgba(255,61,0,.12);
+
+    border:1px solid rgba(255,61,0,.25);
+
+    border-radius:999px;
+
+    color:var(--primary);
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    letter-spacing:.05em;
+
+}
+
+.article-content h3{
+
+    margin-bottom:16px;
+
+    transition:.35s ease;
+
+}
+
+.article-content p{
+
+    margin-bottom:22px;
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}
+
+.article-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    transition:.3s ease;
+
+}
+
+.article-card:hover h3{
+
+    color:var(--primary);
+
+}
+
+.article-card:hover a{
+
+    gap:16px;
+
+}
+
+/* ===========================
+   SHINE EFFECT
+=========================== */
+
+.article-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.08),
+        transparent
+    );
+
+    transform:translateX(-120%);
+
+    transition:.9s ease;
+
+}
+
+.article-card:hover::after{
+
+    transform:translateX(120%);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px){
+
+    .articles-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .articles-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .article-card img{
+
+        height:220px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .article-content{
+
+        padding:22px;
+
+    }
+
+    .article-content h3{
+
+        font-size:1.3rem;
+
+    }
+
+}
+/* =====================================================
+   Moto旅 - Premium Motorcycle Magazine
+   Style.css Part 2B-2
+   Latest News Section
+======================================================*/
+
+/* ===========================
+   LATEST NEWS
+=========================== */
+
+.latest-news{
+    position:relative;
+    padding:110px 0;
+    background:linear-gradient(180deg,#0b0d12,#11151c);
+    overflow:hidden;
+}
+
+.latest-news::before{
+    content:"";
+    position:absolute;
+    left:-180px;
+    top:-180px;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    background:rgba(255,61,0,.08);
+    filter:blur(120px);
+    pointer-events:none;
+}
+
+/* ===========================
+   NEWS GRID
+=========================== */
+
+.news-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:34px;
+    margin-top:60px;
+}
+
+/* ===========================
+   NEWS CARD
+=========================== */
+
+.news-card{
+    position:relative;
+    display:grid;
+    grid-template-columns:320px 1fr;
+    overflow:hidden;
+    border-radius:24px;
+    background:var(--card);
+    border:1px solid rgba(255,255,255,.06);
+    transition:.35s ease;
+}
+
+.news-card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(255,61,0,.35);
+    box-shadow:0 25px 60px rgba(0,0,0,.4);
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.news-card img{
+    width:100%;
+    height:100%;
+    min-height:260px;
+    object-fit:cover;
+    transition:.6s ease;
+}
+
+.news-card:hover img{
+    transform:scale(1.06);
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.news-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:32px;
+}
+
+.news-content span{
+    display:inline-flex;
+    align-items:center;
+    width:max-content;
+    padding:8px 16px;
+    margin-bottom:18px;
+    border-radius:999px;
+    background:rgba(255,61,0,.12);
+    border:1px solid rgba(255,61,0,.25);
+    color:var(--primary);
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:.05em;
+}
+
+.news-content h3{
+    margin-bottom:16px;
+    font-size:1.7rem;
+    transition:.3s ease;
+}
+
+.news-content p{
+    margin-bottom:24px;
+    color:var(--text-light);
+    line-height:1.8;
+}
+
+.news-content a{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    color:var(--primary);
+    font-weight:700;
+    transition:.3s ease;
+}
+
+.news-card:hover h3{
+    color:var(--primary);
+}
+
+.news-card:hover a{
+    gap:16px;
+}
+
+/* ===========================
+   SHINE
+=========================== */
+
+.news-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.07),
+        transparent
+    );
+    transform:translateX(-120%);
+    transition:.9s ease;
+}
+
+.news-card:hover::after{
+    transform:translateX(120%);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1200px){
+
+    .news-card{
+        grid-template-columns:1fr;
+    }
+
+    .news-card img{
+        height:260px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .latest-news{
+        padding:80px 0;
+    }
+
+    .news-grid{
+        grid-template-columns:1fr;
+    }
+
+    .news-content{
+        padding:24px;
+    }
+
+    .news-content h3{
+        font-size:1.4rem;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .news-card{
+        border-radius:20px;
+    }
+
+    .news-card img{
+        height:220px;
+    }
+
+    .news-content{
+        padding:20px;
+    }
+
+}
+/* =====================================================
+   Moto旅 - Premium Motorcycle Magazine
+   Style.css Part 2B-3
+   Touring Section
+====================================================== */
+
+/* ===========================
+   TOURING SECTION
+=========================== */
+
+.touring{
+    position:relative;
+    padding:110px 0;
+    background:#11151c;
+    overflow:hidden;
+}
+
+.touring::before{
+    content:"";
+    position:absolute;
+    right:-180px;
+    bottom:-180px;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:rgba(255,61,0,.08);
+    filter:blur(120px);
+    pointer-events:none;
+}
+
+/* ===========================
+   TOUR GRID
+=========================== */
+
+.tour-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:60px;
+}
+
+/* ===========================
+   TOUR CARD
+=========================== */
+
+.tour-card{
+
+    position:relative;
+
+    padding:40px 35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(16px);
+
+    transition:.35s ease;
+
+    overflow:hidden;
+
+}
+
+.tour-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(255,61,0,.35);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+   ICON
+=========================== */
+
+.tour-card::before{
+
+    content:"🏍️";
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:18px;
+
+    margin-bottom:24px;
+
+    background:rgba(255,61,0,.12);
+
+    font-size:1.8rem;
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.tour-card h3{
+
+    font-size:1.55rem;
+
+    margin-bottom:18px;
+
+    transition:.3s ease;
+
+}
+
+.tour-card:hover h3{
+
+    color:var(--primary);
+
+}
+
+/* ===========================
+   TEXT
+=========================== */
+
+.tour-card p{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
+}
+
+/* ===========================
+   LINK
+=========================== */
+
+.tour-card a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    transition:.3s ease;
+
+}
+
+.tour-card:hover a{
+
+    gap:16px;
+
+}
+
+/* ===========================
+   BORDER GLOW
+=========================== */
+
+.tour-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-1px;
+
+    border-radius:24px;
+
+    padding:1px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,61,0,.35),
+        transparent,
+        rgba(255,255,255,.08)
+    );
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+            mask-composite:exclude;
+
+    opacity:0;
+
+    transition:.35s ease;
+
+    pointer-events:none;
+
+}
+
+.tour-card:hover::after{
+
+    opacity:1;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px){
+
+    .tour-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .tour-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .tour-card{
+
+        padding:30px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .tour-card h3{
+
+        font-size:1.35rem;
+
+    }
+
+    .tour-card{
+
+        border-radius:20px;
+
+    }
+
+}
+/* =====================================================
+   Moto旅 - Premium Motorcycle Magazine
+   Style.css Part 3A
+   Featured Reviews
+======================================================*/
+
+/*============================
+FEATURED REVIEWS
+============================*/
+
+.featured-reviews{
+    position:relative;
+    padding:120px 0;
+    background:linear-gradient(180deg,#0b0d12,#131922);
+    overflow:hidden;
+}
+
+.featured-reviews::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    left:-220px;
+    top:-220px;
+    border-radius:50%;
+    background:rgba(255,61,0,.08);
+    filter:blur(120px);
+}
+
+/*============================
+GRID
+============================*/
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:32px;
+    margin-top:60px;
+}
+
+/*============================
+CARD
+============================*/
+
+.review-card{
+
+    background:var(--card);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.review-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(255,61,0,.35);
+
+}
+
+/*============================
+IMAGE
+============================*/
+
+.review-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.review-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*============================
+CONTENT
+============================*/
+
+.review-content{
+
+    padding:30px;
+
+}
+
+.rating{
+
+    color:#ffb300;
+
+    font-size:18px;
+
+    display:block;
+
+    margin-bottom:14px;
+
+}
+
+.review-content h3{
+
+    margin-bottom:18px;
+
+}
+
+.review-content p{
+
+    margin-bottom:22px;
+
+    color:var(--text-light);
+
+}
+
+.review-content a{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    display:inline-flex;
+
+    gap:10px;
+
+    align-items:center;
+
+}
+
+.review-content a:hover{
+
+    gap:16px;
+
+}
+
+/*============================
+RESPONSIVE
+============================*/
+
+@media(max-width:1100px){
+
+    .review-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .review-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .review-card img{
+
+        height:220px;
+
+    }
+
+}
+/* =====================================================
+   Moto旅 - Premium Motorcycle Magazine
+   Style.css Part 3B
+   Maintenance Tips + Statistics
+======================================================*/
+
+/*============================
+MAINTENANCE SECTION
+============================*/
+
+.maintenance{
+    position:relative;
+    padding:120px 0;
+    background:#11151c;
+    overflow:hidden;
+}
+
+.maintenance::before{
+    content:"";
+    position:absolute;
+    right:-220px;
+    top:-220px;
+    width:480px;
+    height:480px;
+    border-radius:50%;
+    background:rgba(255,61,0,.08);
+    filter:blur(120px);
+    pointer-events:none;
+}
+
+/*============================
+TIPS GRID
+============================*/
+
+.tips-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:60px;
+}
+
+/*============================
+TIP CARD
+============================*/
+
+.tip-card{
+    position:relative;
+    padding:40px 35px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    backdrop-filter:blur(16px);
+    transition:.35s ease;
+    overflow:hidden;
+}
+
+.tip-card:hover{
+    transform:translateY(-10px);
+    border-color:rgba(255,61,0,.35);
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+}
+
+.tip-card i{
+    width:70px;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:25px;
+    font-size:28px;
+    color:var(--primary);
+    border-radius:18px;
+    background:rgba(255,61,0,.12);
+}
+
+.tip-card h3{
+    margin-bottom:18px;
+    font-size:1.45rem;
+}
+
+.tip-card p{
+    color:var(--text-light);
+    line-height:1.8;
+}
+
+/*============================
+STATISTICS
+============================*/
+
+.statistics{
+    padding:110px 0;
+    background:linear-gradient(
+        180deg,
+        #0b0d12,
+        #131922
+    );
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+}
+
+.stat-box{
+    text-align:center;
+    padding:45px 25px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    backdrop-filter:blur(16px);
+    transition:.35s ease;
+}
+
+.stat-box:hover{
+    transform:translateY(-8px);
+    border-color:rgba(255,61,0,.35);
+}
+
+.stat-box h2{
+    color:var(--primary);
+    font-size:3rem;
+    margin-bottom:10px;
+    font-weight:800;
+}
+
+.stat-box p{
+    color:var(--text-light);
+    font-size:1rem;
+}
+
+/*============================
+RESPONSIVE
+============================*/
+
+@media(max-width:1100px){
+
+    .tips-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .tips-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .tip-card{
+        padding:30px;
+    }
+
+    .stat-box{
+        padding:35px 20px;
+    }
+
+    .stat-box h2{
+        font-size:2.5rem;
+    }
+
+}
+/* =====================================================
+   Moto旅 - Premium Motorcycle Magazine
+   Style.css Part 3C
+   Testimonials • Gallery • CTA • Newsletter
+======================================================*/
+
+/*============================
+TESTIMONIALS
+============================*/
+
+.testimonials{
+    padding:120px 0;
+    background:#11151c;
+    position:relative;
+    overflow:hidden;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:60px;
+}
+
+.testimonial-card{
+    position:relative;
+    padding:35px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    backdrop-filter:blur(18px);
+    transition:.35s ease;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-10px);
+    border-color:rgba(255,61,0,.35);
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+}
+
+.quote-icon{
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,61,0,.12);
+    border-radius:16px;
+    color:var(--primary);
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.testimonial-card p{
+    margin-bottom:30px;
+    line-height:1.9;
+}
+
+.testimonial-author{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.testimonial-author img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.testimonial-author h4{
+    margin-bottom:4px;
+}
+
+.testimonial-author span{
+    color:var(--muted);
+    font-size:.9rem;
+}
+
+/*============================
+GALLERY
+============================*/
+
+.gallery{
+    padding:120px 0;
+    background:#0b0d12;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+    margin-top:60px;
+}
+
+.gallery-grid img{
+    width:100%;
+    aspect-ratio:1;
+    object-fit:cover;
+    border-radius:22px;
+    transition:.45s ease;
+    cursor:pointer;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+
+/*============================
+CTA
+============================*/
+
+.cta-section{
+    padding:120px 0;
+    background:linear-gradient(180deg,#11151c,#0b0d12);
+}
+
+.cta-box{
+    padding:70px;
+    text-align:center;
+    border-radius:32px;
+    background:linear-gradient(
+        135deg,
+        rgba(255,61,0,.14),
+        rgba(255,255,255,.05)
+    );
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+}
+
+.cta-box h2{
+    margin:20px 0;
+}
+
+.cta-box p{
+    max-width:700px;
+    margin:0 auto 40px;
+}
+
+.cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+/*============================
+NEWSLETTER
+============================*/
+
+.newsletter{
+    padding:100px 0 140px;
+    background:#0b0d12;
+}
+
+.newsletter-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    padding:50px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:30px;
+    backdrop-filter:blur(18px);
+}
+
+.newsletter-wrapper h2{
+    margin-bottom:12px;
+}
+
+.newsletter form{
+    display:flex;
+    gap:15px;
+    flex:1;
+    max-width:520px;
+}
+
+.newsletter input{
+    flex:1;
+    padding:18px 22px;
+    border-radius:999px;
+    background:#1b212b;
+    color:#fff;
+}
+
+.newsletter button{
+    padding:18px 34px;
+    border-radius:999px;
+    background:var(--primary);
+    color:#fff;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.newsletter button:hover{
+    background:var(--primary-light);
+}
+
+/*============================
+RESPONSIVE
+============================*/
+
+@media(max-width:1100px){
+
+    .testimonial-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .newsletter-wrapper{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .testimonial-grid,
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cta-box{
+        padding:45px 30px;
+    }
+
+    .newsletter{
+        padding:80px 0;
+    }
+
+    .newsletter-wrapper{
+        padding:35px 25px;
+    }
+
+    .newsletter form{
+        flex-direction:column;
+        width:100%;
+        max-width:none;
+    }
+
+    .newsletter button{
+        width:100%;
+    }
+
+}
+/* =====================================================
+   Moto旅 - Premium Motorcycle Magazine
+   Style.css Part 4 (Final)
+   Footer • Back To Top • Utilities • Animations
+======================================================*/
+
+/*======================================================
+FOOTER
+======================================================*/
+
+.footer{
+    position:relative;
+    padding:100px 0 40px;
+    background:#080a0f;
+    border-top:1px solid rgba(255,255,255,.06);
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr repeat(3,1fr);
+    gap:50px;
+    margin-bottom:60px;
+}
+
+.footer-logo{
+    font-size:2rem;
+    font-weight:800;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.footer p{
+    color:var(--text-light);
+    line-height:1.8;
+}
+
+.footer-column h3{
+    margin-bottom:20px;
+    color:#fff;
+    font-size:1.1rem;
+}
+
+.footer-column ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-column li{
+    margin-bottom:14px;
+}
+
+.footer-column a{
+    color:var(--text-light);
+    transition:.3s ease;
+}
+
+.footer-column a:hover{
+    color:var(--primary);
+    padding-left:6px;
+}
+
+.footer-social{
+    display:flex;
+    gap:14px;
+    margin-top:25px;
+}
+
+.footer-social a{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,.06);
+    transition:.35s ease;
+}
+
+.footer-social a:hover{
+    background:var(--primary);
+    transform:translateY(-4px);
+}
+
+.footer-bottom{
+    padding-top:30px;
+    border-top:1px solid rgba(255,255,255,.08);
+    text-align:center;
+    color:var(--muted);
+}
+
+/*======================================================
+BACK TO TOP
+======================================================*/
+
+.back-to-top{
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--primary);
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    opacity:0;
+    visibility:hidden;
+    transition:.35s ease;
+    z-index:999;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.back-to-top.show{
+    opacity:1;
+    visibility:visible;
+}
+
+.back-to-top:hover{
+    transform:translateY(-6px);
+}
+
+/*======================================================
+SCROLL ANIMATION
+======================================================*/
+
+.fade-up{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.fade-up.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/*======================================================
+UTILITY CLASSES
+======================================================*/
+
+.text-center{
+    text-align:center;
+}
+
+.mt-1{margin-top:1rem;}
+.mt-2{margin-top:2rem;}
+.mt-3{margin-top:3rem;}
+.mt-4{margin-top:4rem;}
+
+.mb-1{margin-bottom:1rem;}
+.mb-2{margin-bottom:2rem;}
+.mb-3{margin-bottom:3rem;}
+.mb-4{margin-bottom:4rem;}
+
+.rounded{
+    border-radius:20px;
+}
+
+.shadow{
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+/*======================================================
+IMAGE HELPERS
+======================================================*/
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+img.lazy{
+    opacity:0;
+    transition:opacity .4s ease;
+}
+
+img.lazy.loaded{
+    opacity:1;
+}
+
+/*======================================================
+SELECTION
+======================================================*/
+
+::selection{
+    background:var(--primary);
+    color:#fff;
+}
+
+/*======================================================
+FOCUS
+======================================================*/
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus{
+    outline:2px solid var(--primary);
+    outline-offset:4px;
+}
+
+/*======================================================
+PRINT
+======================================================*/
+
+@media print{
+
+    header,
+    nav,
+    .hero,
+    .newsletter,
+    .cta-section,
+    .back-to-top,
+    footer{
+        display:none !important;
+    }
+
+    body{
+        background:#fff;
+        color:#000;
+    }
+
+}
+
+/*======================================================
+RESPONSIVE
+======================================================*/
+
+@media(max-width:1100px){
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .footer{
+        padding:70px 0 30px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .footer-social{
+        justify-content:center;
+    }
+
+    .back-to-top{
+        width:50px;
+        height:50px;
+        right:20px;
+        bottom:20px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .footer-logo{
+        font-size:1.7rem;
+    }
+
+    .footer-column h3{
+        font-size:1rem;
+    }
+
+}
