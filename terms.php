@@ -1,0 +1,130 @@
+<?php
+$page_title = "Terms & Conditions | MotoVerse";
+$page_description = "Read the Terms and Conditions for using the MotoVerse website.";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title><?= $page_title ?></title>
+<meta name="description" content="<?= $page_description ?>">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="article.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+<div class="container">
+
+<a href="index.php" class="logo">🏍 MotoVerse</a>
+
+<nav>
+<ul>
+<li><a href="index.php">Home</a></li>
+<li><a href="about.php">About</a></li>
+<li><a href="contact.php">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<section class="article-hero">
+
+<div class="container article-hero-content">
+
+<span class="article-category">Terms & Conditions</span>
+
+<h1>Website Terms of Use</h1>
+
+<p>
+By accessing and using MotoVerse, you agree to comply with the following terms and conditions.
+</p>
+
+</div>
+
+</section>
+
+<section class="article-wrapper">
+
+<div class="container">
+
+<div class="article-content">
+
+<h2>Acceptance of Terms</h2>
+
+<p>
+By using this website, you agree to follow these Terms and Conditions. If you do not agree, please discontinue using the website.
+</p>
+
+<h2>Website Content</h2>
+
+<p>
+All articles, guides, images, and other content are provided for general informational purposes only. While we strive for accuracy, we cannot guarantee that all information is complete or up to date.
+</p>
+
+<h2>Intellectual Property</h2>
+
+<p>
+Unless otherwise stated, all original content on MotoVerse is protected by applicable copyright laws. Unauthorized copying, redistribution, or commercial use is prohibited without written permission.
+</p>
+
+<h2>User Conduct</h2>
+
+<ul>
+<li>Do not use the website for unlawful purposes.</li>
+<li>Do not attempt to damage or disrupt the website.</li>
+<li>Respect the rights of other users.</li>
+</ul>
+
+<h2>External Links</h2>
+
+<p>
+MotoVerse may include links to third-party websites for additional information. We are not responsible for the content, services, or privacy practices of those websites.
+</p>
+
+<h2>Changes to These Terms</h2>
+
+<p>
+We may update these Terms and Conditions at any time. Continued use of the website after changes are published constitutes acceptance of the updated terms.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+If you have any questions regarding these Terms and Conditions, please visit our <a href="contact.php">Contact Page</a>.
+</p>
+
+<p><strong>Last Updated:</strong> <?= date("F d, Y"); ?></p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<div class="copyright">
+© <?= date("Y"); ?> MotoVerse. All Rights Reserved.
+</div>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

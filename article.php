@@ -1,0 +1,356 @@
+<!-- ==========================
+SIDEBAR
+========================== -->
+
+<aside class="article-sidebar">
+
+    <div class="sidebar-widget">
+
+        <h3>Categories</h3>
+
+        <ul>
+
+            <li><a href="#">Adventure Bikes</a></li>
+            <li><a href="#">Sport Bikes</a></li>
+            <li><a href="#">Touring Motorcycles</a></li>
+            <li><a href="#">Electric Bikes</a></li>
+            <li><a href="#">Maintenance Tips</a></li>
+
+        </ul>
+
+    </div>
+
+    <div class="sidebar-widget">
+
+        <h3>Popular Articles</h3>
+
+        <div class="popular-post">
+
+            <img src="assets/images/post1.jpg" alt="">
+
+            <div>
+
+                <a href="#">10 Riding Habits Every Beginner Should Learn</a>
+
+                <span>8 min read</span>
+
+            </div>
+
+        </div>
+
+        <div class="popular-post">
+
+            <img src="assets/images/post2.jpg" alt="">
+
+            <div>
+
+                <a href="#">Choosing the Perfect Touring Helmet</a>
+
+                <span>6 min read</span>
+
+            </div>
+
+        </div>
+
+        <div class="popular-post">
+
+            <img src="assets/images/post3.jpg" alt="">
+
+            <div>
+
+                <a href="#">Motorcycle Cleaning Checklist</a>
+
+                <span>7 min read</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+</div>
+</section>
+
+
+<!-- ==========================
+AUTHOR
+========================== -->
+
+<section class="author-box">
+
+<div class="container">
+
+<div class="author-card">
+
+<img src="assets/images/author.jpg" alt="Author">
+
+<div>
+
+<h3>Michael Carter</h3>
+
+<p>
+
+Michael has spent more than twelve years testing motorcycles,
+reviewing riding gear and exploring scenic roads across North
+America and Europe. His articles focus on practical riding advice,
+maintenance knowledge and helping new riders make informed
+decisions before buying their next motorcycle.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ==========================
+RELATED POSTS
+========================== -->
+
+<section class="related-posts">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Related Articles</span>
+
+<h2>You May Also Like</h2>
+
+</div>
+
+<div class="posts-grid">
+
+<article class="post-card">
+
+<img src="assets/images/related1.jpg" alt="">
+
+<div class="post-content">
+
+<span class="tag">Adventure</span>
+
+<h3>Top Weekend Motorcycle Routes</h3>
+
+<p>
+
+Beautiful roads that every rider should experience at least once.
+
+</p>
+
+<a href="#">Read More →</a>
+
+</div>
+
+</article>
+
+
+<article class="post-card">
+
+<img src="assets/images/related2.jpg" alt="">
+
+<div class="post-content">
+
+<span class="tag">Buying Guide</span>
+
+<h3>Best Beginner Motorcycles</h3>
+
+<p>
+
+Reliable and confidence-inspiring bikes for new riders.
+
+</p>
+
+<a href="#">Read More →</a>
+
+</div>
+
+</article>
+
+
+<article class="post-card">
+
+<img src="assets/images/related3.jpg" alt="">
+
+<div class="post-content">
+
+<span class="tag">Maintenance</span>
+
+<h3>How Often Should You Change Engine Oil?</h3>
+
+<p>
+
+Understanding oil intervals helps improve engine longevity.
+
+</p>
+
+<a href="#">Read More →</a>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ==========================
+COMMENTS
+========================== -->
+
+<section class="comments">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Leave a Comment</span>
+
+<h2>Share Your Thoughts</h2>
+
+</div>
+
+<form class="comment-form">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email Address">
+
+<textarea rows="6" placeholder="Write your comment..."></textarea>
+
+<button class="btn-primary">
+
+Post Comment
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- ==========================
+NEWSLETTER
+========================== -->
+
+<section class="newsletter">
+
+<div class="container newsletter-box">
+
+<h2>Join Our Riding Community</h2>
+
+<p>
+
+Get motorcycle news, buying guides and maintenance tips delivered
+directly to your inbox every week.
+
+</p>
+
+<form>
+
+<input type="email" placeholder="Enter your email">
+
+<button>
+
+Subscribe
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<h3>MotoVerse</h3>
+
+<p>
+
+MotoVerse is a modern motorcycle publication dedicated to
+responsible riding, detailed reviews and practical maintenance
+knowledge.
+
+</p>
+
+</div>
+
+<div>
+
+<h4>Quick Links</h4>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">Articles</a></li>
+
+<li><a href="#">Reviews</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4>Legal</h4>
+
+<ul>
+
+<li><a href="#">Privacy Policy</a></li>
+
+<li><a href="#">Terms</a></li>
+
+<li><a href="#">Disclaimer</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4>Follow</h4>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+© <?php echo date("Y"); ?> MotoVerse. All Rights Reserved.
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

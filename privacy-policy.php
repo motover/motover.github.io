@@ -1,0 +1,177 @@
+<?php
+$page_title = "Privacy Policy | MotoVerse";
+$page_description = "Read the MotoVerse Privacy Policy to understand how we collect, use and protect your information.";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title><?= $page_title ?></title>
+
+<meta name="description" content="<?= $page_description ?>">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="article.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<a href="index.php" class="logo">🏍 MotoVerse</a>
+
+<nav>
+<ul>
+<li><a href="index.php">Home</a></li>
+<li><a href="about.php">About</a></li>
+<li><a href="contact.php">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+
+</header>
+
+<section class="article-hero">
+
+<div class="container article-hero-content">
+
+<span class="article-category">
+Privacy Policy
+</span>
+
+<h1>Your Privacy Matters</h1>
+
+<p>
+This Privacy Policy explains how MotoVerse collects, uses and protects
+information when you visit our website.
+</p>
+
+</div>
+
+</section>
+
+<section class="article-wrapper">
+
+<div class="container">
+
+<div class="article-content">
+
+<h2>Information We Collect</h2>
+
+<p>
+We may collect basic information such as your name and email address
+only when you voluntarily submit it through our contact form.
+We also collect anonymous technical information including browser type,
+device information and website usage statistics.
+</p>
+
+<h2>Cookies</h2>
+
+<p>
+MotoVerse uses cookies to improve website performance, remember user
+preferences and provide a better browsing experience.
+Third-party services such as Google AdSense or Google Analytics may also
+use cookies according to their own privacy policies.
+</p>
+
+<h2>How We Use Information</h2>
+
+<ul>
+
+<li>Improve website performance.</li>
+
+<li>Respond to user inquiries.</li>
+
+<li>Analyze website traffic.</li>
+
+<li>Maintain website security.</li>
+
+<li>Display relevant advertisements.</li>
+
+</ul>
+
+<h2>Third-Party Services</h2>
+
+<p>
+We may use trusted third-party services including analytics,
+advertising and hosting providers. These companies may collect
+anonymous usage information according to their own privacy policies.
+</p>
+
+<h2>Data Security</h2>
+
+<p>
+We take reasonable steps to protect user information from unauthorized
+access, misuse or disclosure. However, no online service can guarantee
+complete security.
+</p>
+
+<h2>External Links</h2>
+
+<p>
+Our website may contain links to external websites.
+We are not responsible for the privacy practices or content of those websites.
+</p>
+
+<h2>Children's Privacy</h2>
+
+<p>
+MotoVerse is not intended for children under the age of 13.
+We do not knowingly collect personal information from children.
+</p>
+
+<h2>Policy Updates</h2>
+
+<p>
+This Privacy Policy may be updated from time to time.
+Any changes will be published on this page with the latest revision date.
+</p>
+
+<h2>Contact Us</h2>
+
+<p>
+If you have any questions regarding this Privacy Policy,
+please visit our <a href="contact.php">Contact Page</a>.
+</p>
+
+<p>
+
+<strong>Last Updated:</strong>
+<?= date("F d, Y"); ?>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<div class="copyright">
+
+© <?= date("Y"); ?> MotoVerse. All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

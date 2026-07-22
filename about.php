@@ -1,0 +1,115 @@
+<?php
+$page_title = "About Us | MotoVerse";
+$page_description = "Learn more about MotoVerse, our mission, and our passion for motorcycles.";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><?= $page_title ?></title>
+<meta name="description" content="<?= $page_description ?>">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="article.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<a href="index.php" class="logo">🏍 MotoVerse</a>
+
+<nav>
+<ul>
+<li><a href="index.php">Home</a></li>
+<li><a href="about.php" class="active">About</a></li>
+<li><a href="contact.php">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="article-hero">
+<div class="container article-hero-content">
+
+<span class="article-category">About MotoVerse</span>
+
+<h1>Helping Riders Make Better Decisions</h1>
+
+<p>
+MotoVerse is an independent motorcycle website dedicated to publishing
+easy-to-understand guides, riding tips, maintenance tutorials, and honest
+motorcycle reviews for riders around the world.
+</p>
+
+</div>
+</section>
+
+<section class="article-wrapper">
+
+<div class="container">
+
+<div class="article-content">
+
+<h2>Who We Are</h2>
+
+<p>
+MotoVerse was created for motorcycle enthusiasts who want reliable,
+well-researched, and practical information. Our goal is to make riding
+safer, easier, and more enjoyable for beginners and experienced riders alike.
+</p>
+
+<h2>What We Publish</h2>
+
+<ul>
+<li>Motorcycle Reviews</li>
+<li>Buying Guides</li>
+<li>Maintenance Tips</li>
+<li>Safety Advice</li>
+<li>Travel & Touring Articles</li>
+<li>Industry News</li>
+</ul>
+
+<h2>Our Mission</h2>
+
+<p>
+We believe every rider deserves access to clear, unbiased, and useful
+motorcycle information. Every article is written to help readers make
+confident decisions without unnecessary technical jargon.
+</p>
+
+<h2>Contact Us</h2>
+
+<p>
+If you have questions, suggestions, or partnership inquiries,
+please visit our <a href="contact.php">Contact Page</a>.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<div class="copyright">
+
+© <?= date("Y"); ?> MotoVerse. All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

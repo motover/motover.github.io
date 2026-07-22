@@ -1,0 +1,96 @@
+<?php
+$page_title = "Contact Us | MotoVerse";
+$page_description = "Contact MotoVerse for questions, feedback, or business inquiries.";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title><?= $page_title ?></title>
+<meta name="description" content="<?= $page_description ?>">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="article.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<a href="index.php" class="logo">🏍 MotoVerse</a>
+
+<nav>
+<ul>
+<li><a href="index.php">Home</a></li>
+<li><a href="about.php">About</a></li>
+<li><a href="contact.php" class="active">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="article-hero">
+<div class="container article-hero-content">
+
+<span class="article-category">Get in Touch</span>
+
+<h1>We'd Love to Hear From You</h1>
+
+<p>
+Have a question, suggestion, or business inquiry? Send us a message and we'll get back to you as soon as possible.
+</p>
+
+</div>
+</section>
+
+<section class="article-wrapper">
+<div class="container">
+
+<div class="article-content">
+
+<h2>Contact Form</h2>
+
+<form class="comment-form" action="#" method="post">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<input type="text" name="subject" placeholder="Subject" required>
+
+<textarea name="message" rows="6" placeholder="Write your message..." required></textarea>
+
+<button type="submit" class="btn-primary">
+Send Message
+</button>
+
+</form>
+
+<h2>General Information</h2>
+
+<p>
+For editorial feedback, partnership opportunities, or general questions, please use the contact form above. We aim to respond to all genuine inquiries within 2–3 business days.
+</p>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="copyright">
+© <?= date("Y"); ?> MotoVerse. All Rights Reserved.
+</div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
