@@ -1,130 +1,300 @@
-<?php
-$page_title = "Terms & Conditions | MotoVerse";
-$page_description = "Read the Terms and Conditions for using the MotoVerse website.";
-?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title><?= $page_title ?></title>
-<meta name="description" content="<?= $page_description ?>">
+    <title>利用規約 | Moto旅</title>
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="article.css">
+    <meta name="description"
+        content="Moto旅の利用規約をご確認ください。">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="robots"
+        content="index,follow">
+
+    <link rel="icon"
+        href="assets/images/favicon.png">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="assets/css/style.css">
 
 </head>
 
 <body>
 
-<header>
-<div class="container">
+<!-- =========================================
+HEADER
+========================================= -->
 
-<a href="index.php" class="logo">🏍 MotoVerse</a>
+<header class="header">
 
-<nav>
-<ul>
-<li><a href="index.php">Home</a></li>
-<li><a href="about.php">About</a></li>
-<li><a href="contact.php">Contact</a></li>
-</ul>
-</nav>
+    <div class="container">
 
-</div>
+        <a href="index.html" class="logo">
+
+            <i class="fa-solid fa-motorcycle"></i>
+
+            <span>Moto旅</span>
+
+        </a>
+
+        <nav class="navbar">
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">ホーム</a></li>
+
+                <li><a href="about.html">会社概要</a></li>
+
+                <li><a href="touring.html">ツーリング</a></li>
+
+                <li><a href="contact.html">お問い合わせ</a></li>
+
+            </ul>
+
+        </nav>
+
+        <button class="menu-toggle">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
 </header>
 
-<section class="article-hero">
+<!-- =========================================
+HERO
+========================================= -->
 
-<div class="container article-hero-content">
+<section class="hero">
 
-<span class="article-category">Terms & Conditions</span>
+    <div class="container hero-grid">
 
-<h1>Website Terms of Use</h1>
+        <div class="hero-content">
 
-<p>
-By accessing and using MotoVerse, you agree to comply with the following terms and conditions.
-</p>
+            <span class="hero-badge">
 
-</div>
+                Terms & Conditions
 
-</section>
+            </span>
 
-<section class="article-wrapper">
+            <h1>
 
-<div class="container">
+                利用規約
 
-<div class="article-content">
+            </h1>
 
-<h2>Acceptance of Terms</h2>
+            <p>
 
-<p>
-By using this website, you agree to follow these Terms and Conditions. If you do not agree, please discontinue using the website.
-</p>
+                Moto旅をご利用いただく前に、
+                以下の利用規約を必ずお読みください。
+                本サイトをご利用いただいた場合、
+                本規約に同意したものとみなします。
 
-<h2>Website Content</h2>
+            </p>
 
-<p>
-All articles, guides, images, and other content are provided for general informational purposes only. While we strive for accuracy, we cannot guarantee that all information is complete or up to date.
-</p>
+        </div>
 
-<h2>Intellectual Property</h2>
-
-<p>
-Unless otherwise stated, all original content on MotoVerse is protected by applicable copyright laws. Unauthorized copying, redistribution, or commercial use is prohibited without written permission.
-</p>
-
-<h2>User Conduct</h2>
-
-<ul>
-<li>Do not use the website for unlawful purposes.</li>
-<li>Do not attempt to damage or disrupt the website.</li>
-<li>Respect the rights of other users.</li>
-</ul>
-
-<h2>External Links</h2>
-
-<p>
-MotoVerse may include links to third-party websites for additional information. We are not responsible for the content, services, or privacy practices of those websites.
-</p>
-
-<h2>Changes to These Terms</h2>
-
-<p>
-We may update these Terms and Conditions at any time. Continued use of the website after changes are published constitutes acceptance of the updated terms.
-</p>
-
-<h2>Contact</h2>
-
-<p>
-If you have any questions regarding these Terms and Conditions, please visit our <a href="contact.php">Contact Page</a>.
-</p>
-
-<p><strong>Last Updated:</strong> <?= date("F d, Y"); ?></p>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<footer>
+<!-- =========================================
+TERMS
+========================================= -->
 
-<div class="container">
+<section class="maintenance">
 
-<div class="copyright">
-© <?= date("Y"); ?> MotoVerse. All Rights Reserved.
-</div>
+    <div class="container">
 
-</div>
+        <div class="section-header">
+
+            <h2>
+
+                利用規約
+
+            </h2>
+
+            <p>
+
+                Moto旅をご利用いただく際の基本ルールです。
+
+            </p>
+
+        </div>
+
+        <div class="tip-card">
+
+            <h3>1. サイトの利用</h3>
+
+            <p>
+
+                当サイトは情報提供を目的として運営されています。
+                利用者は自己責任において本サイトをご利用ください。
+
+            </p>
+
+        </div>
+
+        <div class="tip-card">
+
+            <h3>2. 著作権</h3>
+
+            <p>
+
+                掲載されている文章・画像・ロゴなどの著作権は
+                Moto旅または各権利者に帰属します。
+                無断転載・複製を禁止します。
+
+            </p>
+
+        </div>
+
+        <div class="tip-card">
+
+            <h3>3. 禁止事項</h3>
+
+            <p>
+
+                法令違反、公序良俗に反する行為、
+                サイト運営を妨害する行為は禁止します。
+
+            </p>
+
+        </div>
+
+        <div class="tip-card">
+
+            <h3>4. 免責事項</h3>
+
+            <p>
+
+                掲載情報について正確性の維持に努めていますが、
+                内容を保証するものではありません。
+                利用によって生じた損害について責任を負いません。
+
+            </p>
+
+        </div>
+
+        <div class="tip-card">
+
+            <h3>5. 規約の変更</h3>
+
+            <p>
+
+                本規約は予告なく変更される場合があります。
+                最新版を本ページに掲載します。
+
+            </p>
+
+        </div>
+
+        <div class="tip-card">
+
+            <h3>6. お問い合わせ</h3>
+
+            <p>
+
+                本規約に関するご質問は、
+                お問い合わせページよりご連絡ください。
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-logo">
+
+                <h3>Moto旅</h3>
+
+                <p>
+
+                    日本全国のライダーへ向けて、
+                    プレミアムなツーリング情報と
+                    モーターサイクルコンテンツをお届けします。
+
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>ページ</h4>
+
+                <ul>
+
+                    <li><a href="about.html">会社概要</a></li>
+
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+
+                    <li><a href="terms.html">利用規約</a></li>
+
+                    <li><a href="contact.html">お問い合わせ</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © <span class="current-year"></span>
+                Moto旅. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
 
 </footer>
 
-<script src="script.js"></script>
+<!-- =========================================
+BACK TO TOP
+========================================= -->
+
+<button class="back-to-top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
