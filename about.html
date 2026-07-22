@@ -1,93 +1,280 @@
-<?php
-$page_title = "About Us | MotoVerse";
-$page_description = "Learn more about MotoVerse, our mission, and our passion for motorcycles.";
-?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?= $page_title ?></title>
-<meta name="description" content="<?= $page_description ?>">
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="article.css">
+<title>会社概要 | Moto旅</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="description"
+content="Moto旅について。日本全国のライダーへ向けて最新レビュー、ツーリング情報、ニュースを発信するプレミアムモーターサイクルマガジン。">
+
+<meta name="keywords"
+content="Moto旅,会社概要,バイク,日本,ツーリング,レビュー">
+
+<meta name="author"
+content="Moto旅">
+
+<meta name="robots"
+content="index, follow">
+
+<meta name="theme-color"
+content="#0d1117">
+
+<meta property="og:type"
+content="website">
+
+<meta property="og:title"
+content="会社概要 | Moto旅">
+
+<meta property="og:description"
+content="Moto旅について">
+
+<meta property="og:image"
+content="assets/images/hero.webp">
+
+<link rel="icon"
+href="assets/images/favicon.png">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap"
+rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="assets/css/style.css">
+
 </head>
 
 <body>
 
-<header>
-<div class="container">
-<a href="index.php" class="logo">🏍 MotoVerse</a>
+<!-- =========================================
+HEADER
+========================================== -->
 
-<nav>
-<ul>
-<li><a href="index.php">Home</a></li>
-<li><a href="about.php" class="active">About</a></li>
-<li><a href="contact.php">Contact</a></li>
+<header class="header">
+
+<div class="container">
+
+<a href="index.html" class="logo">
+
+<i class="fa-solid fa-motorcycle"></i>
+
+<span>Moto旅</span>
+
+</a>
+
+<nav class="navbar">
+
+<ul class="nav-links">
+
+<li><a href="index.html">ホーム</a></li>
+
+<li><a href="articles.html">レビュー</a></li>
+
+<li><a href="touring.html">ツーリング</a></li>
+
+<li><a href="news.html">ニュース</a></li>
+
+<li><a href="maintenance.html">メンテナンス</a></li>
+
+<li><a class="active" href="about.html">会社概要</a></li>
+
+<li><a href="contact.html">お問い合わせ</a></li>
+
 </ul>
+
 </nav>
+
+<button class="menu-toggle" aria-label="Open Menu">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+<div class="header-buttons">
+
+<a href="articles.html" class="btn btn-primary">
+
+最新記事
+
+</a>
+
 </div>
+
+</div>
+
 </header>
 
-<section class="article-hero">
-<div class="container article-hero-content">
+<!-- =========================================
+PAGE HERO
+========================================== -->
 
-<span class="article-category">About MotoVerse</span>
+<section class="hero">
 
-<h1>Helping Riders Make Better Decisions</h1>
+<div class="container hero-grid">
+
+<div class="hero-content">
+
+<span class="hero-badge">
+
+Moto旅について
+
+</span>
+
+<h1>
+
+ライダーとともに、
+最高の旅を。
+
+</h1>
 
 <p>
-MotoVerse is an independent motorcycle website dedicated to publishing
-easy-to-understand guides, riding tips, maintenance tutorials, and honest
-motorcycle reviews for riders around the world.
+
+Moto旅は、日本全国のライダーへ向けて
+信頼できるレビュー、ツーリング情報、
+メンテナンスガイド、業界ニュースを発信する
+プレミアムモーターサイクルマガジンです。
+
 </p>
 
+<div class="hero-buttons">
+
+<a href="articles.html"
+class="btn btn-primary">
+
+記事を見る
+
+</a>
+
+<a href="contact.html"
+class="btn btn-secondary">
+
+お問い合わせ
+
+</a>
+
 </div>
+
+</div>
+
+<div class="hero-image">
+
+<img
+src="assets/images/hero.webp"
+alt="Moto旅"
+loading="eager">
+
+</div>
+
+</div>
+
 </section>
 
-<section class="article-wrapper">
+<!-- =========================================
+ABOUT COMPANY
+========================================== -->
+
+<section class="maintenance">
 
 <div class="container">
 
-<div class="article-content">
+<div class="section-header">
 
-<h2>Who We Are</h2>
+<span class="section-tag">
 
-<p>
-MotoVerse was created for motorcycle enthusiasts who want reliable,
-well-researched, and practical information. Our goal is to make riding
-safer, easier, and more enjoyable for beginners and experienced riders alike.
-</p>
+会社紹介
 
-<h2>What We Publish</h2>
+</span>
 
-<ul>
-<li>Motorcycle Reviews</li>
-<li>Buying Guides</li>
-<li>Maintenance Tips</li>
-<li>Safety Advice</li>
-<li>Travel & Touring Articles</li>
-<li>Industry News</li>
-</ul>
+<h2>
 
-<h2>Our Mission</h2>
+Moto旅とは
+
+</h2>
 
 <p>
-We believe every rider deserves access to clear, unbiased, and useful
-motorcycle information. Every article is written to help readers make
-confident decisions without unnecessary technical jargon.
+
+Moto旅は、日本国内外のライダーへ向けて
+高品質なモーターサイクル情報を提供する
+オンラインマガジンです。
+
 </p>
 
-<h2>Contact Us</h2>
+</div>
+
+<div class="tips-grid">
+
+<div class="tip-card">
+
+<i class="fa-solid fa-road"></i>
+
+<h3>
+
+ツーリング
+
+</h3>
 
 <p>
-If you have questions, suggestions, or partnership inquiries,
-please visit our <a href="contact.php">Contact Page</a>.
+
+全国の人気ツーリングルート、
+絶景スポット、
+おすすめ休憩ポイントを紹介しています。
+
 </p>
+
+</div>
+
+<div class="tip-card">
+
+<i class="fa-solid fa-motorcycle"></i>
+
+<h3>
+
+レビュー
+
+</h3>
+
+<p>
+
+最新バイクの性能、
+燃費、
+快適性、
+安全性を徹底レビュー。
+
+</p>
+
+</div>
+
+<div class="tip-card">
+
+<i class="fa-solid fa-newspaper"></i>
+
+<h3>
+
+ニュース
+
+</h3>
+
+<p>
+
+国内外メーカーの最新情報、
+新型モデル、
+イベント情報を毎日更新しています。
+
+</p>
+
+</div>
 
 </div>
 
@@ -95,21 +282,341 @@ please visit our <a href="contact.php">Contact Page</a>.
 
 </section>
 
-<footer>
+<!-- =========================================
+MISSION & VISION
+========================================== -->
+
+<section class="featured-reviews">
 
 <div class="container">
 
-<div class="copyright">
+<div class="section-header">
 
-© <?= date("Y"); ?> MotoVerse. All Rights Reserved.
+<span class="section-tag">
+
+Mission
+
+</span>
+
+<h2>
+
+私たちの使命
+
+</h2>
+
+</div>
+
+<div class="review-grid">
+
+<article class="review-card">
+
+<div class="review-content">
+
+<h3>
+
+信頼できる情報
+
+</h3>
+
+<p>
+
+ライダーが安心して選べる
+正確で分かりやすい情報を提供します。
+
+</p>
+
+</div>
+
+</article>
+
+<article class="review-card">
+
+<div class="review-content">
+
+<h3>
+
+ライダーコミュニティ
+
+</h3>
+
+<p>
+
+全国のライダーをつなぎ、
+バイク文化を広げることを目指しています。
+
+</p>
+
+</div>
+
+</article>
+
+<article class="review-card">
+
+<div class="review-content">
+
+<h3>
+
+未来への挑戦
+
+</h3>
+
+<p>
+
+最新技術や電動バイクなど、
+未来のモビリティ情報も発信します。
+
+</p>
+
+</div>
+
+</article>
 
 </div>
 
 </div>
+
+</section>
+
+<!-- ========= END PART 1 ========= -->
+<!-- =========================================
+CORE VALUES
+========================================== -->
+
+<section class="testimonials">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">Core Values</span>
+
+            <h2>私たちの価値観</h2>
+
+            <p>
+                Moto旅は、すべてのライダーに価値ある情報を届けることを使命としています。
+            </p>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <h3>信頼性</h3>
+
+                <p>
+                    正確で公平な情報を提供し、
+                    読者から信頼されるメディアを目指します。
+                </p>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <h3>革新</h3>
+
+                <p>
+                    新しい技術やバイク文化を積極的に発信します。
+                </p>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <i class="fa-solid fa-earth-asia"></i>
+
+                <h3>コミュニティ</h3>
+
+                <p>
+                    全国のライダー同士をつなぎ、
+                    バイクライフをより豊かにします。
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+EDITORIAL TEAM
+========================================== -->
+
+<section class="featured">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">Editorial Team</span>
+
+            <h2>編集チーム</h2>
+
+        </div>
+
+        <div class="featured-grid">
+
+            <article class="featured-card">
+
+                <img src="assets/images/team1.webp" alt="編集長">
+
+                <div class="featured-content">
+
+                    <h3>佐藤 健一</h3>
+
+                    <p>編集長</p>
+
+                </div>
+
+            </article>
+
+            <article class="featured-card">
+
+                <img src="assets/images/team2.webp" alt="ライター">
+
+                <div class="featured-content">
+
+                    <h3>山田 翔</h3>
+
+                    <p>レビュー担当</p>
+
+                </div>
+
+            </article>
+
+            <article class="featured-card">
+
+                <img src="assets/images/team3.webp" alt="フォトグラファー">
+
+                <div class="featured-content">
+
+                    <h3>高橋 美咲</h3>
+
+                    <p>フォトグラファー</p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+COMPANY STATS
+========================================== -->
+
+<section class="statistics">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <h2>50K+</h2>
+
+                <p>月間読者</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>1,200+</h2>
+
+                <p>公開記事</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>300+</h2>
+
+                <p>レビュー</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>47</h2>
+
+                <p>都道府県を取材</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+CALL TO ACTION
+========================================== -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>Moto旅と一緒に最高の旅へ。</h2>
+
+        <p>
+
+            最新レビュー、
+            ツーリング情報、
+            メンテナンスガイドを今すぐチェックしましょう。
+
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="articles.html" class="btn btn-primary">
+
+                記事を見る
+
+            </a>
+
+            <a href="contact.html" class="btn btn-secondary">
+
+                お問い合わせ
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+FOOTER
+※ Yahan apna index.html wala EXACT footer paste karo.
+========================================== -->
+
+<footer class="footer">
+
+    <!-- Paste your existing Footer from index.html here -->
 
 </footer>
 
-<script src="script.js"></script>
+<!-- Back To Top -->
+
+<button class="back-to-top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
