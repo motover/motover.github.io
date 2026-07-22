@@ -2817,13 +2817,55 @@ GALLERY
     aspect-ratio:1;
     object-fit:cover;
     border-radius:22px;
-    transition:.45s ease;
     cursor:pointer;
+    transition:transform .45s ease, box-shadow .45s ease;
 }
 
 .gallery-grid img:hover{
     transform:scale(1.05);
     box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+
+/*============================
+GALLERY LIGHTBOX
+============================*/
+
+.gallery-lightbox{
+    position:fixed;
+    inset:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.92);
+    z-index:9999;
+    padding:30px;
+}
+
+.gallery-lightbox.show{
+    display:flex;
+}
+
+.gallery-lightbox img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:18px;
+    object-fit:contain;
+    box-shadow:0 20px 60px rgba(0,0,0,.6);
+}
+
+.gallery-close{
+    position:absolute;
+    top:25px;
+    right:35px;
+    font-size:42px;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s ease;
+}
+
+.gallery-close:hover{
+    color:var(--primary);
+    transform:rotate(90deg);
 }
 
 /*============================
