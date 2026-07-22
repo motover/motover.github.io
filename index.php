@@ -1,0 +1,1115 @@
+<?php
+$pageTitle = "MotoVerse | Premium Motorcycle Magazine";
+$siteUrl = "https://yourdomain.com";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title><?php echo $pageTitle; ?></title>
+
+<meta name="description" content="MotoVerse is a premium motorcycle magazine featuring bike reviews, riding guides, maintenance tips, touring stories and motorcycle lifestyle content.">
+
+<meta name="keywords" content="motorcycle reviews, bike guides, adventure bikes, sport bikes, motorcycle maintenance, riding tips">
+
+<meta name="author" content="MotoVerse">
+
+
+<!-- SEO -->
+
+<link rel="canonical" href="<?php echo $siteUrl; ?>">
+
+
+<!-- Open Graph -->
+
+<meta property="og:title" content="MotoVerse | Premium Motorcycle Magazine">
+
+<meta property="og:description" content="Explore motorcycle reviews, riding guides, travel stories and expert bike advice.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="<?php echo $siteUrl; ?>">
+
+
+<!-- Twitter -->
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="MotoVerse Motorcycle Magazine">
+
+<meta name="twitter:description" content="Premium motorcycle reviews and riding inspiration.">
+
+
+<!-- Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<!-- Icons -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<link rel="stylesheet" href="style.css">
+
+
+<!-- Schema -->
+
+<script type="application/ld+json">
+
+{
+ "@context":"https://schema.org",
+ "@type":"NewsMediaOrganization",
+ "name":"MotoVerse",
+ "url":"<?php echo $siteUrl; ?>",
+ "description":"Premium motorcycle magazine covering reviews and riding guides."
+}
+
+</script>
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="container">
+
+
+<div class="logo">
+
+<i class="fa-solid fa-motorcycle"></i>
+
+<span>MotoVerse</span>
+
+</div>
+
+
+
+<nav>
+
+<ul>
+
+<li><a href="/">Home</a></li>
+
+<li><a href="#">Reviews</a></li>
+
+<li><a href="#">Guides</a></li>
+
+<li><a href="#">Travel</a></li>
+
+<li><a href="#">Gear</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+<a href="#" class="btn-nav">
+
+Subscribe
+
+</a>
+
+
+</div>
+
+</header>
+
+
+
+
+<!-- HERO -->
+
+
+<section class="hero">
+
+
+<div class="hero-overlay"></div>
+
+
+<div class="container hero-grid">
+
+
+<div class="hero-content">
+
+
+<span class="badge">
+
+2026 MOTORCYCLE MAGAZINE
+
+</span>
+
+
+<h1>
+
+Ride Beyond Limits.
+<br>
+Explore Every Road.
+
+</h1>
+
+
+<p>
+
+Discover expert motorcycle reviews,
+maintenance guides, touring inspiration
+and real rider stories created for
+passionate motorcycle enthusiasts.
+
+</p>
+
+
+
+<div class="hero-buttons">
+
+
+<a href="#" class="btn-primary">
+
+Explore Articles
+
+</a>
+
+
+<a href="#" class="btn-secondary">
+
+Latest Reviews
+
+</a>
+
+
+</div>
+
+
+
+
+<div class="hero-stats">
+
+
+<div>
+
+<h3>450+</h3>
+
+<p>Articles</p>
+
+</div>
+
+
+
+<div>
+
+<h3>80+</h3>
+
+<p>Bike Reviews</p>
+
+</div>
+
+
+
+<div>
+
+<h3>35K+</h3>
+
+<p>Readers</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="hero-image">
+
+
+<img 
+src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80"
+alt="Adventure Motorcycle"
+loading="eager">
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- FEATURED CATEGORIES -->
+
+
+<section class="featured">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+
+<span>
+
+Featured Categories
+
+</span>
+
+
+<h2>
+
+Find The Perfect Ride For Every Journey
+
+</h2>
+
+
+<p>
+
+Explore motorcycles, riding techniques,
+maintenance tips and travel inspiration.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="category-grid">
+
+
+
+<div class="category-card">
+
+
+<img 
+src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=700&q=80"
+alt="Adventure Motorcycle"
+loading="lazy">
+
+
+<div class="content">
+
+
+<h3>
+
+Adventure Bikes
+
+</h3>
+
+
+<p>
+
+Long distance motorcycles designed for
+highways, mountains and exploration.
+
+</p>
+
+
+<a href="#">
+
+Read More →
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="category-card">
+
+
+<img 
+src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=700&q=80"
+alt="Sport Bike"
+loading="lazy">
+
+
+<div class="content">
+
+
+<h3>
+
+Sport Bikes
+
+</h3>
+
+
+<p>
+
+High performance motorcycles built for
+speed and precision handling.
+
+</p>
+
+
+<a href="#">
+
+Read More →
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="category-card">
+
+
+<img 
+src="https://images.unsplash.com/photo-1529429617124-aee711a5ac1c?auto=format&fit=crop&w=700&q=80"
+alt="Cafe Racer"
+loading="lazy">
+
+
+<div class="content">
+
+
+<h3>
+
+Cafe Racers
+
+</h3>
+
+
+<p>
+
+Classic motorcycle styling combined with
+modern engineering.
+
+</p>
+
+
+<a href="#">
+
+Read More →
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="category-card">
+
+
+<img 
+src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80"
+alt="Electric Motorcycle"
+loading="lazy">
+
+
+<div class="content">
+
+
+<h3>
+
+Electric Bikes
+
+</h3>
+
+
+<p>
+
+Discover the future of clean and smart
+two-wheel transportation.
+
+</p>
+
+
+<a href="#">
+
+Read More →
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- ===========================
+LATEST ARTICLES
+=========================== -->
+
+
+<section class="latest-posts">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<span>
+Latest Articles
+</span>
+
+
+<h2>
+Fresh Stories For Every Rider
+</h2>
+
+
+<p>
+Practical motorcycle knowledge, maintenance tips,
+travel inspiration and buying guides.
+</p>
+
+
+</div>
+
+
+
+
+<div class="posts-grid">
+
+
+
+<article class="post-card">
+
+
+<img 
+src="https://images.unsplash.com/photo-1515777315835-281b94c9589f?auto=format&fit=crop&w=800&q=80"
+alt="Motorcycle Touring"
+loading="lazy">
+
+
+<div class="post-content">
+
+
+<span class="tag">
+Adventure
+</span>
+
+
+<h3>
+Planning Your First Long Motorcycle Tour
+</h3>
+
+
+<p>
+Everything you need to know before starting
+a memorable long-distance motorcycle journey.
+</p>
+
+
+<a href="#">
+Read Article →
+</a>
+
+
+</div>
+
+
+</article>
+
+
+
+
+
+<article class="post-card">
+
+
+<img 
+src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80"
+alt="Bike Maintenance"
+loading="lazy">
+
+
+<div class="post-content">
+
+
+<span class="tag">
+Maintenance
+</span>
+
+
+<h3>
+Simple Bike Care Habits That Save Money
+</h3>
+
+
+<p>
+Learn basic maintenance routines that improve
+performance and extend motorcycle life.
+</p>
+
+
+<a href="#">
+Read Article →
+</a>
+
+
+</div>
+
+
+</article>
+
+
+
+
+
+<article class="post-card">
+
+
+<img 
+src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80"
+alt="Motorcycle Review"
+loading="lazy">
+
+
+<div class="post-content">
+
+
+<span class="tag">
+Reviews
+</span>
+
+
+<h3>
+How To Choose The Right Motorcycle
+</h3>
+
+
+<p>
+Engine size, comfort and riding style decide
+which motorcycle fits your lifestyle.
+</p>
+
+
+<a href="#">
+Read Article →
+</a>
+
+
+</div>
+
+
+</article>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- FEATURED REVIEW -->
+
+
+<section class="featured-review">
+
+
+<div class="container review-grid">
+
+
+
+<div class="review-image">
+
+
+<img 
+src="https://images.unsplash.com/photo-1529429617124-aee711a5ac1c?auto=format&fit=crop&w=900&q=80"
+alt="Adventure Motorcycle Review"
+loading="lazy">
+
+
+</div>
+
+
+
+
+<div class="review-content">
+
+
+<span class="badge">
+Editor's Pick
+</span>
+
+
+<h2>
+The Perfect Motorcycle For Everyday Adventure
+</h2>
+
+
+
+<p>
+
+Modern adventure motorcycles combine comfort,
+performance and reliability. They are perfect
+for city rides, weekend trips and long journeys.
+
+</p>
+
+
+
+
+<ul>
+
+<li>✔ Comfortable Riding Position</li>
+
+<li>✔ Excellent Fuel Economy</li>
+
+<li>✔ Reliable Engine Performance</li>
+
+<li>✔ City And Touring Ready</li>
+
+</ul>
+
+
+
+
+<a href="#" class="btn-primary">
+
+Read Full Review
+
+</a>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- STATISTICS -->
+
+
+<section class="statistics">
+
+
+<div class="container">
+
+
+<div class="stats-grid">
+
+
+<div class="stat-box">
+
+<h2>
+450+
+</h2>
+
+<p>
+Published Articles
+</p>
+
+</div>
+
+
+
+<div class="stat-box">
+
+<h2>
+95%
+</h2>
+
+<p>
+Reader Satisfaction
+</p>
+
+</div>
+
+
+
+<div class="stat-box">
+
+<h2>
+80+
+</h2>
+
+<p>
+Bike Reviews
+</p>
+
+</div>
+
+
+
+<div class="stat-box">
+
+<h2>
+25+
+</h2>
+
+<p>
+Travel Guides
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- NEWSLETTER -->
+
+
+<section class="newsletter">
+
+
+<div class="container newsletter-box">
+
+
+<h2>
+Join Our Motorcycle Community
+</h2>
+
+
+
+<p>
+
+Get motorcycle reviews, riding tips,
+maintenance guides and travel stories
+directly in your inbox.
+
+</p>
+
+
+
+
+<form>
+
+
+<input 
+type="email"
+placeholder="Enter your email address"
+required>
+
+
+<button type="submit">
+
+Subscribe
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
+
+
+<div class="container footer-grid">
+
+
+<div>
+
+
+<h3>
+MotoVerse
+</h3>
+
+
+<p>
+
+MotoVerse is a premium motorcycle magazine
+sharing expert reviews, riding inspiration
+and motorcycle lifestyle content.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div>
+
+
+<h4>
+Categories
+</h4>
+
+
+<ul>
+
+<li>
+<a href="#">
+Adventure Bikes
+</a>
+</li>
+
+
+<li>
+<a href="#">
+Sport Bikes
+</a>
+</li>
+
+
+<li>
+<a href="#">
+Electric Bikes
+</a>
+</li>
+
+
+<li>
+<a href="#">
+Travel Guides
+</a>
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+<div>
+
+
+<h4>
+Company
+</h4>
+
+
+<ul>
+
+
+<li>
+<a href="#">
+About
+</a>
+</li>
+
+
+<li>
+<a href="#">
+Contact
+</a>
+</li>
+
+
+<li>
+<a href="#">
+Privacy Policy
+</a>
+</li>
+
+
+<li>
+<a href="#">
+Terms
+</a>
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div>
+
+
+<h4>
+Follow Us
+</h4>
+
+
+
+<div class="social">
+
+
+<a href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-youtube"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="copyright">
+
+
+<p>
+
+© <?php echo date("Y"); ?> MotoVerse.
+All Rights Reserved.
+
+</p>
+
+
+</div>
+
+
+
+</footer>
+
+
+
+
+
+
+
+<script>
+
+
+// Smooth scrolling
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+anchor.addEventListener("click",function(e){
+
+e.preventDefault();
+
+});
+
+});
+
+
+
+// Lazy image optimization
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+const images=document.querySelectorAll("img");
+
+images.forEach(img=>{
+
+img.setAttribute("loading","lazy");
+
+});
+
+});
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
