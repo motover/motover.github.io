@@ -475,17 +475,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
         galleryImages.forEach(image => {
 
-            image.addEventListener("click", () => {
+    image.addEventListener("click", () => {
 
-                overlayImage.src = image.src;
+        overlayImage.onload = () => {
 
-                overlay.classList.add("show");
+            overlay.classList.add("show");
+            document.body.style.overflow = "hidden";
 
-                document.body.style.overflow = "hidden";
+        };
 
-            });
+        overlayImage.onerror = () => {
 
-        });
+            alert("Image could not be loaded.");
+
+        };
+
+        overlayImage.src = image.src;
+
+    });
+
+});
 
         overlay.addEventListener("click", e => {
 
