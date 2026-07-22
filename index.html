@@ -1,120 +1,188 @@
-<?php
-$pageTitle = "MotoVerse | Premium Motorcycle Magazine";
-?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title><?php echo $pageTitle; ?></title>
+<title>Moto旅 | 日本最大級のバイクレビュー＆ツーリングマガジン</title>
 
 <meta name="description"
-content="MotoVerse is a modern motorcycle magazine covering bike reviews, riding guides, maintenance tips and motorcycle lifestyle.">
-<meta property="og:image" content="assets/images/hero.jpg">
+content="Moto旅は日本のバイクレビュー、ツーリング情報、最新ニュース、メンテナンスガイドを提供するプレミアムモーターサイクルマガジンです。">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="keywords"
+content="バイク, オートバイ, ツーリング, バイクレビュー, 日本, Honda, Yamaha, Kawasaki, Suzuki">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="author"
+content="Moto旅">
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+<meta name="robots"
+content="index, follow">
 
-<link rel="stylesheet" href="style.css">
+<meta name="theme-color"
+content="#0d1117">
+
+<meta property="og:type"
+content="website">
+
+<meta property="og:title"
+content="Moto旅">
+
+<meta property="og:description"
+content="プレミアムバイクマガジン">
+
+<meta property="og:image"
+content="assets/images/hero.webp">
+
+<meta property="og:locale"
+content="ja_JP">
+
+<link rel="icon"
+href="assets/images/favicon.png">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap"
+rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="assets/css/style.css">
 
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
 <div class="container">
 
-<a href="index.php" class="logo">
+<a href="index.html" class="logo">
 
 <i class="fa-solid fa-motorcycle"></i>
 
-<span>MotoVerse</span>
+<span>Moto旅</span>
 
 </a>
 
-<nav>
+<nav class="navbar">
 
 <ul>
 
-<li><a href="index.php" class="active">Home</a></li>
+<li>
+<a class="active" href="index.html">
+ホーム
+</a>
+</li>
 
-<li><a href="article.php">Reviews</a></li>
+<li>
+<a href="articles.html">
+レビュー
+</a>
+</li>
 
-<li><a href="article.php">Buying Guides</a></li>
+<li>
+<a href="articles.html">
+ツーリング
+</a>
+</li>
 
-<li><a href="article.php">Travel</a></li>
+<li>
+<a href="articles.html">
+ニュース
+</a>
+</li>
 
-<li><a href="article.php">Maintenance</a></li>
+<li>
+<a href="articles.html">
+メンテナンス
+</a>
+</li>
 
-<li><a href="contact.php">Contact</a></li>
+<li>
+<a href="about.html">
+会社概要
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+お問い合わせ
+</a>
+</li>
 
 </ul>
 
 </nav>
 
-<a href="contact.php" class="btn-nav">
+<div class="header-buttons">
 
-Subscribe
+<a href="articles.html"
+class="btn-primary">
+
+最新記事
 
 </a>
 
 </div>
 
+</div>
+
 </header>
 
-
-
-
+<!-- ===========================
+HERO SECTION
+=========================== -->
 
 <section class="hero">
-
-<div class="hero-overlay"></div>
 
 <div class="container hero-grid">
 
 <div class="hero-content">
 
-<span class="badge">
+<span class="hero-badge">
 
-2026 MOTORCYCLE MAGAZINE
+2026 プレミアム モーターサイクル マガジン
 
 </span>
 
 <h1>
 
-Ride Beyond Limits.
+自由を走る。
 
-Explore Every Road.
+人生を旅する。
 
 </h1>
 
 <p>
 
-Discover in-depth motorcycle reviews, maintenance advice,
-touring inspiration, rider stories and practical buying guides
-written for everyday enthusiasts and experienced riders alike.
+Moto旅は、日本全国のライダーへ向けたプレミアムバイクマガジンです。
+最新モデルのレビュー、ツーリングスポット、メンテナンス情報、
+ライディングテクニックなどを毎日お届けします。
 
 </p>
 
 <div class="hero-buttons">
 
-<a href="article.php" class="btn-primary">
+<a href="articles.html"
+class="btn-primary">
 
-Explore Articles
+記事を見る
 
 </a>
 
-<a href="article.php" class="btn-secondary">
+<a href="articles.html"
+class="btn-secondary">
 
-Latest Reviews
+最新レビュー
 
 </a>
 
@@ -124,25 +192,25 @@ Latest Reviews
 
 <div>
 
-<h3>450+</h3>
+<h2>500+</h2>
 
-<p>Articles</p>
-
-</div>
-
-<div>
-
-<h3>80+</h3>
-
-<p>Bike Reviews</p>
+<p>レビュー記事</p>
 
 </div>
 
 <div>
 
-<h3>35K</h3>
+<h2>120+</h2>
 
-<p>Monthly Readers</p>
+<p>ツーリングガイド</p>
+
+</div>
+
+<div>
+
+<h2>75K+</h2>
+
+<p>月間読者</p>
 
 </div>
 
@@ -152,7 +220,10 @@ Latest Reviews
 
 <div class="hero-image">
 
-<img src="assets/images/hero.jpg" alt="Adventure Motorcycle">
+<img
+src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1200&q=80"
+alt="日本のスポーツバイク"
+loading="eager">
 
 </div>
 
@@ -160,135 +231,380 @@ Latest Reviews
 
 </section>
 
+<!-- =========================================
+FEATURED MOTORCYCLES
+========================================== -->
 
-
-
-
-<section class="featured">
+<section class="featured-section">
 
 <div class="container">
 
-<div class="section-title">
+<div class="section-header">
 
-<span>Featured Categories</span>
+<span class="section-tag">
+人気モデル
+</span>
+
+<h2>
+注目のモーターサイクル
+</h2>
+
+<p>
+日本で人気の高いスポーツバイク、ツーリングモデル、
+アドベンチャーバイクを厳選して紹介します。
+</p>
+
+</div>
+
+<div class="featured-grid">
+
+<!-- Card -->
+
+<article class="bike-card">
+
+<div class="bike-image">
+
+<img
+src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80"
+alt="Honda CBR"
+loading="lazy">
+
+<span class="bike-badge">
+HONDA
+</span>
+
+</div>
+
+<div class="bike-content">
+
+<h3>
+Honda CBR650R
+</h3>
+
+<p>
+
+スポーツ性能と快適性を兼ね備えた人気モデル。
+街乗りからロングツーリングまで幅広く活躍します。
+
+</p>
+
+<a href="article.html">
+
+続きを読む
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</article>
+
+<!-- Card -->
+
+<article class="bike-card">
+
+<div class="bike-image">
+
+<img
+src="https://images.unsplash.com/photo-1515777315835-281b94c9589f?auto=format&fit=crop&w=900&q=80"
+alt="Yamaha MT-09"
+loading="lazy">
+
+<span class="bike-badge">
+
+YAMAHA
+
+</span>
+
+</div>
+
+<div class="bike-content">
+
+<h3>
+
+Yamaha MT-09
+
+</h3>
+
+<p>
+
+軽量ボディと力強いエンジンで、
+スポーツライディングを存分に楽しめます。
+
+</p>
+
+<a href="article.html">
+
+続きを読む
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</article>
+
+<!-- Card -->
+
+<article class="bike-card">
+
+<div class="bike-image">
+
+<img
+src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
+alt="Kawasaki Ninja"
+loading="lazy">
+
+<span class="bike-badge">
+
+KAWASAKI
+
+</span>
+
+</div>
+
+<div class="bike-content">
+
+<h3>
+
+Ninja ZX-6R
+
+</h3>
+
+<p>
+
+サーキット性能と日常での扱いやすさを両立した
+ミドルクラススポーツ。
+
+</p>
+
+<a href="article.html">
+
+続きを読む
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+POPULAR BRANDS
+========================================== -->
+
+<section class="brands">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-tag">
+
+ブランド
+
+</span>
 
 <h2>
 
-Find the Perfect Ride for Every Journey
+人気メーカー
+
+</h2>
+
+</div>
+
+<div class="brand-grid">
+
+<a href="articles.html" class="brand-card">
+HONDA
+</a>
+
+<a href="articles.html" class="brand-card">
+YAMAHA
+</a>
+
+<a href="articles.html" class="brand-card">
+KAWASAKI
+</a>
+
+<a href="articles.html" class="brand-card">
+SUZUKI
+</a>
+
+<a href="articles.html" class="brand-card">
+DUCATI
+</a>
+
+<a href="articles.html" class="brand-card">
+BMW
+</a>
+
+<a href="articles.html" class="brand-card">
+KTM
+</a>
+
+<a href="articles.html" class="brand-card">
+TRIUMPH
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+POPULAR ARTICLES
+========================================== -->
+
+<section class="popular-articles">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-tag">
+
+人気記事
+
+</span>
+
+<h2>
+
+ライダーに人気の記事
 
 </h2>
 
 <p>
 
-Whether you're planning a weekend escape or searching for your
-next dream motorcycle, explore our curated categories filled with
-expert insights and practical advice.
+最新レビューやツーリングガイド、
+初心者向け情報を毎週更新しています。
 
 </p>
 
 </div>
 
-<div class="category-grid">
+<div class="articles-grid">
 
-<div class="category-card">
+<article class="article-card">
 
-<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80">
+<img
+src="https://images.unsplash.com/photo-1529429617124-aee711a5ac1c?auto=format&fit=crop&w=900&q=80"
+alt="Touring"
+loading="lazy">
 
-<div class="content">
+<div class="article-content">
 
-<h3>Adventure Bikes</h3>
+<span>
+
+ツーリング
+
+</span>
+
+<h3>
+
+北海道おすすめツーリングルート
+
+</h3>
 
 <p>
 
-Long-distance touring motorcycles built for highways,
-mountains and unforgettable road trips.
+絶景を楽しめる人気ルートを紹介します。
 
 </p>
 
-<a href="#">
+<a href="article.html">
 
-Read More →
+続きを読む
 
 </a>
 
 </div>
 
-</div>
+</article>
 
-<div class="category-card">
+<article class="article-card">
 
-<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=700&q=80">
+<img
+src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80"
+alt="Review"
+loading="lazy">
 
-<div class="content">
+<div class="article-content">
 
-<h3>Sport Bikes</h3>
+<span>
+
+レビュー
+
+</span>
+
+<h3>
+
+2026年最新スポーツバイク比較
+
+</h3>
 
 <p>
 
-Performance-focused machines offering speed,
-precision handling and cutting-edge technology.
+人気モデルを性能・価格・燃費で比較。
 
 </p>
 
-<a href="#">
+<a href="article.html">
 
-Read More →
+続きを読む
 
 </a>
 
 </div>
 
-</div>
+</article>
 
-<div class="category-card">
+<article class="article-card">
 
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=700&q=80">
+<img
+src="https://images.unsplash.com/photo-1515777315835-281b94c9589f?auto=format&fit=crop&w=900&q=80"
+alt="Maintenance"
+loading="lazy">
 
-<div class="content">
+<div class="article-content">
 
-<h3>Electric Motorcycles</h3>
+<span>
+
+メンテナンス
+
+</span>
+
+<h3>
+
+初心者でもできる簡単メンテナンス
+
+</h3>
 
 <p>
 
-Explore the future of two-wheel mobility with
-innovative electric motorcycles and charging tips.
+毎日の点検で愛車を長持ちさせましょう。
 
 </p>
 
-<a href="#">
+<a href="article.html">
 
-Read More →
+続きを読む
 
 </a>
 
 </div>
 
-</div>
-
-<div class="category-card">
-
-<img src="https://images.unsplash.com/photo-1529429617124-aee711a5ac1c?auto=format&fit=crop&w=700&q=80">
-
-<div class="content">
-
-<h3>Cafe Racers</h3>
-
-<p>
-
-Classic styling meets modern engineering in these
-beautiful custom-inspired motorcycles.
-
-</p>
-
-<a href="#">
-
-Read More →
-
-</a>
-
-</div>
-
-</div>
+</article>
 
 </div>
 
@@ -296,88 +612,84 @@ Read More →
 
 </section>
 
-<!-- ===========================
-LATEST ARTICLES
-=========================== -->
+<!-- =========================================
+LATEST NEWS
+========================================== -->
 
-<section class="latest-posts">
+<section class="latest-news">
 
 <div class="container">
 
-<div class="section-title">
+<div class="section-header">
 
-<span>Latest Articles</span>
+<span class="section-tag">
+最新ニュース
+</span>
 
-<h2>Fresh Stories for Every Rider</h2>
+<h2>
+バイク業界の最新情報
+</h2>
 
 <p>
-Discover practical motorcycle knowledge, travel inspiration,
-maintenance guides and buying advice written by passionate riders.
+国内外の新型モデル、イベント情報、
+最新技術などを毎日更新しています。
 </p>
 
 </div>
 
-<div class="posts-grid">
+<div class="news-grid">
 
-<article class="post-card">
+<article class="news-card">
 
-<img src="https://images.unsplash.com/photo-1515777315835-281b94c9589f?auto=format&fit=crop&w=800&q=80" alt="Adventure Bike">
+<img
+src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&q=80"
+alt="Motorcycle News"
+loading="lazy">
 
-<div class="post-content">
+<div class="news-content">
 
-<span class="tag">Adventure</span>
+<span>ニュース</span>
 
-<h3>Planning Your First Long Motorcycle Tour</h3>
-
-<p>
-Preparing for a long-distance ride requires more than fuel and
-navigation. Learn how proper planning improves comfort,
-confidence and safety.
-</p>
-
-<a href="#">Read Article →</a>
-
-</div>
-
-</article>
-
-<article class="post-card">
-
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80">
-
-<div class="post-content">
-
-<span class="tag">Maintenance</span>
-
-<h3>Simple Bike Care Habits That Save Money</h3>
+<h3>
+Hondaが2026年モデルを発表
+</h3>
 
 <p>
-Regular cleaning, lubrication and inspections extend the life
-of your motorcycle while reducing expensive repairs.
+新しいデザインと最新電子制御システムを搭載した
+2026年モデルが公開されました。
 </p>
 
-<a href="#">Read Article →</a>
+<a href="article.html">
+続きを読む →
+</a>
 
 </div>
 
 </article>
 
-<article class="post-card">
+<article class="news-card">
 
-<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80">
+<img
+src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
+alt="Bike Event"
+loading="lazy">
 
-<div class="post-content">
+<div class="news-content">
 
-<span class="tag">Buying Guide</span>
+<span>イベント</span>
 
-<h3>How to Choose the Right Motorcycle</h3>
+<h3>
+東京モーターサイクルショー2026
+</h3>
 
 <p>
-Engine size, riding position and intended use all influence
-which motorcycle is best for your lifestyle.
+国内外メーカーが集結する大型イベントの
+見どころを紹介します。
 </p>
 
-<a href="#">Read Article →</a>
+<a href="article.html">
+続きを読む →
+</a>
 
 </div>
 
@@ -389,53 +701,115 @@ which motorcycle is best for your lifestyle.
 
 </section>
 
+<!-- =========================================
+TOURING DESTINATIONS
+========================================== -->
 
+<section class="touring">
 
-<!-- ===========================
-FEATURED REVIEW
-=========================== -->
+<div class="container">
 
-<section class="featured-review">
+<div class="section-header">
 
-<div class="container review-grid">
+<span class="section-tag">
+ツーリング
+</span>
 
-<div class="review-image">
+<h2>
+人気ツーリングスポット
+</h2>
 
-<img src="https://images.unsplash.com/photo-1529429617124-aee711a5ac1c?auto=format&fit=crop&w=900&q=80">
+<p>
+美しい景色と快適なライディングが楽しめる
+日本各地のおすすめルートを紹介します。
+</p>
 
 </div>
 
-<div class="review-content">
+<div class="tour-grid">
 
-<span class="badge">Editor's Pick</span>
+<div class="tour-card">
 
-<h2>The Perfect Motorcycle for Everyday Adventure</h2>
+<h3>北海道</h3>
+
+<p>
+広大な景色と直線道路を満喫できる人気エリア。
+</p>
+
+<a href="article.html">
+詳しく見る
+</a>
+
+</div>
+
+<div class="tour-card">
+
+<h3>富士山</h3>
+
+<p>
+四季折々の景色を楽しめる定番ツーリングコース。
+</p>
+
+<a href="article.html">
+詳しく見る
+</a>
+
+</div>
+
+<div class="tour-card">
+
+<h3>箱根</h3>
+
+<p>
+ワインディングロードが魅力の人気スポット。
+</p>
+
+<a href="article.html">
+詳しく見る
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+NEWSLETTER PREVIEW
+========================================== -->
+
+<section class="newsletter-preview">
+
+<div class="container">
+
+<div class="newsletter-card">
+
+<span class="section-tag">
+
+ニュースレター
+
+</span>
+
+<h2>
+
+最新レビューを毎週お届け
+
+</h2>
 
 <p>
 
-Modern adventure motorcycles combine comfort,
-performance and versatility into one exciting package.
-Whether commuting during the week or exploring remote
-roads on weekends, today's bikes are designed to
-handle almost every riding situation with confidence.
+新型バイクレビュー、
+ツーリング情報、
+イベント情報を無料で配信します。
 
 </p>
 
-<ul>
+<a href="contact.html"
+class="btn-primary">
 
-<li>✔ Comfortable Riding Position</li>
-
-<li>✔ Excellent Fuel Economy</li>
-
-<li>✔ Reliable Engine Performance</li>
-
-<li>✔ Ideal for City & Touring</li>
-
-</ul>
-
-<a href="article.php" class="btn-primary">
-
-Read Full Review
+無料登録
 
 </a>
 
@@ -445,188 +819,663 @@ Read Full Review
 
 </section>
 
+<!-- ========= END OF PART 1 ========= -->
+<!-- =========================================
+FEATURED REVIEWS
+========================================== -->
 
+<section class="featured-reviews">
 
-<!-- ===========================
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">レビュー</span>
+
+            <h2>編集部おすすめレビュー</h2>
+
+            <p>
+                実際に試乗したライダーによる詳しいレビューを掲載しています。
+                エンジン性能、快適性、安全性、燃費まで徹底的に検証しました。
+            </p>
+
+        </div>
+
+        <div class="review-grid">
+
+            <article class="review-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80"
+                    alt="Honda CB650R"
+                    loading="lazy">
+
+                <div class="review-content">
+
+                    <span class="rating">
+                        ★★★★★
+                    </span>
+
+                    <h3>Honda CB650R</h3>
+
+                    <p>
+
+                        街乗りからロングツーリングまで快適に楽しめる
+                        バランスの良いスポーツネイキッド。
+
+                    </p>
+
+                    <a href="article.html">
+                        レビューを見る →
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="review-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1515777315835-281b94c9589f?auto=format&fit=crop&w=900&q=80"
+                    alt="Yamaha MT-09"
+                    loading="lazy">
+
+                <div class="review-content">
+
+                    <span class="rating">
+                        ★★★★★
+                    </span>
+
+                    <h3>Yamaha MT-09</h3>
+
+                    <p>
+
+                        パワフルな3気筒エンジンと軽快なハンドリングが魅力。
+
+                    </p>
+
+                    <a href="article.html">
+                        レビューを見る →
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="review-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
+                    alt="Kawasaki Ninja ZX-6R"
+                    loading="lazy">
+
+                <div class="review-content">
+
+                    <span class="rating">
+                        ★★★★★
+                    </span>
+
+                    <h3>Kawasaki Ninja ZX-6R</h3>
+
+                    <p>
+
+                        サーキット性能と公道での扱いやすさを兼ね備えた
+                        ミドルスポーツ。
+
+                    </p>
+
+                    <a href="article.html">
+                        レビューを見る →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+MAINTENANCE TIPS
+========================================== -->
+
+<section class="maintenance">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                メンテナンス
+
+            </span>
+
+            <h2>
+
+                愛車を長く乗るための基本メンテナンス
+
+            </h2>
+
+        </div>
+
+        <div class="tips-grid">
+
+            <div class="tip-card">
+
+                <i class="fa-solid fa-oil-can"></i>
+
+                <h3>
+
+                    オイル交換
+
+                </h3>
+
+                <p>
+
+                    エンジンオイルは定期的に交換することで、
+                    エンジン寿命を大幅に延ばせます。
+
+                </p>
+
+            </div>
+
+            <div class="tip-card">
+
+                <i class="fa-solid fa-gauge-high"></i>
+
+                <h3>
+
+                    タイヤ空気圧
+
+                </h3>
+
+                <p>
+
+                    空気圧チェックは安全運転の基本です。
+                    月に一度は確認しましょう。
+
+                </p>
+
+            </div>
+
+            <div class="tip-card">
+
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                <h3>
+
+                    チェーン清掃
+
+                </h3>
+
+                <p>
+
+                    定期的な清掃と注油で
+                    スムーズな走行性能を維持できます。
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
 STATISTICS
-=========================== -->
+========================================== -->
 
 <section class="statistics">
 
-<div class="container">
+    <div class="container">
 
-<div class="stats-grid">
+        <div class="stats-grid">
 
-<div class="stat-box">
+            <div class="stat-box">
 
-<h2>450+</h2>
+                <h2>750+</h2>
 
-<p>Published Articles</p>
+                <p>公開記事</p>
 
-</div>
+            </div>
 
-<div class="stat-box">
+            <div class="stat-box">
 
-<h2>95%</h2>
+                <h2>150+</h2>
 
-<p>Reader Satisfaction</p>
+                <p>レビュー</p>
 
-</div>
+            </div>
 
-<div class="stat-box">
+            <div class="stat-box">
 
-<h2>80+</h2>
+                <h2>95K+</h2>
 
-<p>Bike Reviews</p>
+                <p>月間読者</p>
 
-</div>
+            </div>
 
-<div class="stat-box">
+            <div class="stat-box">
 
-<h2>25+</h2>
+                <h2>30+</h2>
 
-<p>Travel Guides</p>
+                <p>ブランド掲載</p>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 </section>
 
+<!-- ========= END PART 2A ========= -->
+<!-- =========================================
+RIDER TESTIMONIALS
+========================================== -->
 
+<section class="testimonials">
 
-<!-- ===========================
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">ライダーの声</span>
+
+            <h2>読者からのレビュー</h2>
+
+            <p>
+                Moto旅を利用しているライダーから寄せられた
+                リアルな感想をご紹介します。
+            </p>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <article class="testimonial-card">
+
+                <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+
+                <p>
+
+                    Moto旅の記事を参考に北海道ツーリングへ行きました。
+                    写真も情報も分かりやすく最高でした。
+
+                </p>
+
+                <div class="testimonial-author">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+                        alt="Rider">
+
+                    <div>
+
+                        <h4>佐藤 健</h4>
+
+                        <span>北海道</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="testimonial-card">
+
+                <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+
+                <p>
+
+                    バイクレビューが非常に詳しく、
+                    新車選びの参考になりました。
+
+                </p>
+
+                <div class="testimonial-author">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+                        alt="Rider">
+
+                    <div>
+
+                        <h4>高橋 美咲</h4>
+
+                        <span>東京</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="testimonial-card">
+
+                <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+
+                <p>
+
+                    メンテナンス記事のおかげで
+                    自分でも簡単な整備ができるようになりました。
+
+                </p>
+
+                <div class="testimonial-author">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80"
+                        alt="Rider">
+
+                    <div>
+
+                        <h4>中村 翔</h4>
+
+                        <span>大阪</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+PHOTO GALLERY
+========================================== -->
+
+<section class="gallery">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                ギャラリー
+
+            </span>
+
+            <h2>
+
+                今週の人気フォト
+
+            </h2>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80" alt="Bike">
+
+            <img src="https://images.unsplash.com/photo-1515777315835-281b94c9589f?auto=format&fit=crop&w=800&q=80" alt="Bike">
+
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Bike">
+
+            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80" alt="Bike">
+
+            <img src="https://images.unsplash.com/photo-1529429617124-aee711a5ac1c?auto=format&fit=crop&w=800&q=80" alt="Bike">
+
+            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80" alt="Bike">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+CALL TO ACTION
+========================================== -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <span class="section-tag">
+
+                Moto旅 Community
+
+            </span>
+
+            <h2>
+
+                日本中のライダーとつながろう
+
+            </h2>
+
+            <p>
+
+                最新レビュー、ツーリング情報、
+                メンテナンス記事、イベント情報を
+                毎週無料でお届けします。
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="contact.html" class="btn-primary">
+
+                    無料登録
+
+                </a>
+
+                <a href="articles.html" class="btn-secondary">
+
+                    記事を見る
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
 NEWSLETTER
-=========================== -->
+========================================== -->
 
 <section class="newsletter">
 
-<div class="container newsletter-box">
+    <div class="container">
 
-<h2>Join Our Motorcycle Community</h2>
+        <div class="newsletter-wrapper">
 
-<p>
+            <div>
 
-Receive riding tips, maintenance guides,
-new motorcycle reviews and travel inspiration
-directly in your inbox.
+                <h2>
 
-</p>
+                    ニュースレターを購読
 
-<form>
+                </h2>
 
-<input type="email"
-placeholder="Enter your email address">
+                <p>
 
-<button type="submit">
+                    新着レビューやツーリング情報を
+                    メールで受け取りましょう。
 
-Subscribe
+                </p>
 
-</button>
+            </div>
 
-</form>
+            <form>
 
-</div>
+                <input
+                    type="email"
+                    placeholder="メールアドレス">
+
+                <button type="submit">
+
+                    登録する
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
 
 </section>
 
-
-
-<!-- ===========================
+<!-- ========= END PART 2B ========= -->
+<!-- =========================================
 FOOTER
-=========================== -->
+========================================== -->
 
-<footer>
+<footer class="footer">
 
-<div class="container footer-grid">
+    <div class="container">
 
-<div>
+        <div class="footer-grid">
 
-<h3>MotoVerse</h3>
+            <!-- Brand -->
 
-<p>
+            <div class="footer-column">
 
-MotoVerse is an independent motorcycle magazine
-sharing practical advice, riding inspiration,
-bike reviews and maintenance knowledge for
-enthusiasts around the world.
+                <a href="index.html" class="footer-logo">
+                    <i class="fa-solid fa-motorcycle"></i>
+                    <span>Moto旅</span>
+                </a>
 
-</p>
+                <p>
+                    Moto旅は、日本全国のライダーへ向けた
+                    プレミアムモーターサイクルマガジンです。
+                    最新レビュー、ツーリング情報、
+                    ニュースを毎日発信しています。
+                </p>
 
-</div>
+                <div class="social-links">
 
-<div>
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
 
-<h4>Categories</h4>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
 
-<ul>
+                    <a href="#" aria-label="X">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
 
-<li><a href="#">Adventure Bikes</a></li>
+                    <a href="#" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
 
-<li><a href="#">Sport Bikes</a></li>
+                </div>
 
-<li><a href="#">Electric Bikes</a></li>
+            </div>
 
-<li><a href="article.php">Travel Guides</a></li>
+            <!-- Navigation -->
 
-</ul>
+            <div class="footer-column">
 
-</div>
+                <h3>サイト</h3>
 
-<div>
+                <ul>
 
-<h4>Company</h4>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="articles.html">レビュー</a></li>
+                    <li><a href="articles.html">ツーリング</a></li>
+                    <li><a href="articles.html">ニュース</a></li>
+                    <li><a href="about.html">会社概要</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
 
-<ul>
+                </ul>
 
-<li><a href="#">About</a></li>
+            </div>
 
-<li><a href="contact.php">Contact</a></li>
+            <!-- Resources -->
 
-<li><a href="#">Privacy Policy</a></li>
+            <div class="footer-column">
 
-<li><a href="#">Terms</a></li>
+                <h3>リソース</h3>
 
-</ul>
+                <ul>
 
-</div>
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                    <li><a href="terms.html">利用規約</a></li>
+                    <li><a href="disclaimer.html">免責事項</a></li>
+                    <li><a href="cookie-policy.html">Cookieポリシー</a></li>
+                    <li><a href="sitemap.html">サイトマップ</a></li>
 
-<div>
+                </ul>
 
-<h4>Follow Us</h4>
+            </div>
 
-<div class="social">
+            <!-- Contact -->
 
-<a href="#"><i class="fab fa-facebook-f"></i></a>
+            <div class="footer-column">
 
-<a href="#"><i class="fab fa-instagram"></i></a>
+                <h3>お問い合わせ</h3>
 
-<a href="#"><i class="fab fa-youtube"></i></a>
+                <ul>
 
-<a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <li>Email: info@mototabi.jp</li>
+                    <li>Tokyo, Japan</li>
+                    <li>Mon - Fri : 9:00 - 18:00</li>
 
-</div>
+                </ul>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-<div class="copyright">
+        <div class="footer-bottom">
 
-<p>
+            <p>
 
-© <?php echo date("Y"); ?> MotoVerse.
-All Rights Reserved.
+                © 2026 Moto旅.
+                All Rights Reserved.
 
-</p>
+            </p>
 
-</div>
+        </div>
+
+    </div>
 
 </footer>
 
-<script src="script.js"></script>
+<!-- =========================================
+BACK TO TOP
+========================================== -->
+
+<button id="backToTop" aria-label="Back to Top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- =========================================
+JAVASCRIPT
+========================================== -->
+
+<script src="assets/js/script.js"></script>
 
 </body>
-</html>
+
+</html>  
